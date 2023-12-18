@@ -20,4 +20,4 @@ function updateServerTime() {
 
 // 초기에 한 번 호출하고 일정 간격으로 업데이트
 updateServerTime();
-setInterval(updateServerTime, 500); // 1000ms마다 업데이트 (1초)
+setInterval(updateServerTime, 100); // 1000ms마다 업데이트 (1초)
