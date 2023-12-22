@@ -116,6 +116,14 @@
             .item a::after {
                 content: "でもらう";
             }
+            .item.bundle a::after {
+                content: "で購入";
+            }
+            .item.psplus a::after,
+            .item.prime a::after,
+            .item.choice a::after {
+                content: "で購読";
+            }
             .item.upcoming a::before {
                 content: "確認"!important;
             }

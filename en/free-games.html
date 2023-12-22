@@ -116,6 +116,14 @@
             .item a::before {
                 content: "Claim on "!important;
             }
+            .item.bundle a::before {
+                content: "Buy on "!important;
+            }
+            .item.psplus a::before,
+            .item.prime a::before,
+            .item.choice a::before {
+                content: "Subscribe on "!important;
+            }
             .item.upcoming a::before {
                 content: "Go to "!important;
             }
