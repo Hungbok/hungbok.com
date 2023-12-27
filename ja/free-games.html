@@ -68,6 +68,7 @@
             </section>
         </section>
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@700&display=swap');
             .sale-item .on-sale.timer-container::after {
                 content: "セール中";
             }
@@ -139,7 +140,7 @@
                 width: 20px;
                 height: 20px;
                 background: url(https://www.hungbok.net/img/icon/done.svg) no-repeat;
-                right: 10px;
+                right: 20px;
                 background-size: cover;
                 filter: var(--filter);
                 -webkit-transition: all 0.5s;
@@ -147,6 +148,33 @@
                 -o-transition: all 0.5s;
                 -ms-transition: all 0.5s;
                 transition: all 0.5s;
+            }
+            .header-menu-text {
+                font-family: 'M PLUS 1 Code',"monospace","Lato","Noto Sans JP","Open Sans",sans-serif;
+            }
+            header .nav-home .header-menu-text::after {
+                content: "トップ";
+            }
+            header .nav-tv .header-menu-text::after {
+                content: "テレビ";
+            }
+            header .nav-movie .header-menu-text::after {
+                content: "シネマ";
+            }
+            header .nav-anime .header-menu-text::after {
+                content: "アニメ";
+            }
+            header .nav-games .header-menu-text::after {
+                content: "ゲーム";
+            }
+            header .nav-books .header-menu-text::after {
+                content: "ブック";
+            }
+            header .nav-music .header-menu-text::after {
+                content: "ソング";
+            }
+            header .nav-support .header-menu-text::after {
+                content: "サポート";
             }
         </style>
         <script type="text/javascript" src="https://www.hungbok.net/js/main.js"></script>
