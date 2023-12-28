@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
         <link class="style" rel="stylesheet" type="text/css" href="https://www.hungbok.net/css/main.css">
         <link class="style" rel="stylesheet" type="text/css" href="https://www.hungbok.net/css/free-games.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/ja-jp.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <noscript>
             <meta http-equiv="refresh" content="0; url=/script">
@@ -42,7 +43,7 @@
                             <div class="button" onclick="bundle(this)">バンドル</div>
                             <div class="button" onclick="subscribe(this)">サブスク</div>
                             <div class="line"></div>
-                            <div class="available-button active" onclick="toggleStatusItems('available', this)">登録可能</div>
+                            <div class="available-button active" onclick="toggleStatusItems('available', this)">期限切れを隠す</div>
                         </div>
                     </div>
                     <div class="filter-all">
@@ -67,116 +68,6 @@
                 <p id="serverTime">0000-00-00 00:00:00 UTC+00:00</p>
             </section>
         </section>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@700&display=swap');
-            .sale-item .on-sale.timer-container::after {
-                content: "セール中";
-            }
-            .sale-more-button::before {
-                content: "開く";
-            }
-            .sale-more-button.highlight::before {
-                content: "閉じる";
-            }
-            .sale-text::after {
-                content: "最近のイベントしか見ることができます。";
-            }
-            .item::before {
-                content: "終了";
-            }
-            .item.upcoming::before {
-                content: "時間終了";
-            }
-            .item.steam a::before {
-                content: "Steam";
-            }
-            .item.epic a::before {
-                content: "Epic Gamesストア";
-            }
-            .item.gog a::before {
-                content: "GOG";
-            }
-            .item.ubi a::before {
-                content: "Ubisoftストア";
-            }
-            .item.fanatical a::before {
-                content: "Fanatical";
-            }
-            .item.humble a::before {
-                content: "Humble Bundle";
-            }
-            .item.prime a::before {
-                content: "Prime Gaming";
-            }
-            .item.psplus a::before {
-                content: "Playstationストア";
-            }
-            .item.xbox a::before {
-                content: "Xboxストア";
-            }
-            .item a::after {
-                content: "でもらう";
-            }
-            .item.bundle a::after {
-                content: "で購入";
-            }
-            .item.psplus a::after,
-            .item.prime a::after,
-            .item.choice a::after {
-                content: "でサブスクライブ";
-            }
-            .item.upcoming a::before {
-                content: "確認"!important;
-            }
-            .item.upcoming a::after {
-                content: "する"!important;
-            }
-            .language-select[data-lang="ko"]::before {
-                content: unset;
-            }
-            .language-select[data-lang="ja"]::before {
-                content: "";
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                background: url(https://www.hungbok.net/img/icon/done.svg) no-repeat;
-                right: 20px;
-                background-size: cover;
-                filter: var(--filter);
-                -webkit-transition: all 0.5s;
-                -moz-transition: all 0.5s;
-                -o-transition: all 0.5s;
-                -ms-transition: all 0.5s;
-                transition: all 0.5s;
-            }
-            .header-menu-text {
-                font-family: 'M PLUS 1 Code',"monospace","Lato","Noto Sans JP","Open Sans",sans-serif;
-            }
-            header .nav-home .header-menu-text::after {
-                content: "トップ";
-            }
-            header .nav-tv .header-menu-text::after {
-                content: "テレビ";
-            }
-            header .nav-movie .header-menu-text::after {
-                content: "シネマ";
-            }
-            header .nav-anime .header-menu-text::after {
-                content: "アニメ";
-            }
-            header .nav-games .header-menu-text::after {
-                content: "ゲーム";
-            }
-            header .nav-books .header-menu-text::after {
-                content: "ブック";
-            }
-            header .nav-music .header-menu-text::after {
-                content: "ソング";
-            }
-            header .nav-support .header-menu-text::after {
-                content: "サポート";
-            }
-        </style>
         <script type="text/javascript" src="https://www.hungbok.net/js/main.js"></script>
         <script type="text/javascript" src="https://www.hungbok.net/js/free-games.js"></script>
         <script type="text/javascript" src="https://www.hungbok.net/js/copyright.js"></script>

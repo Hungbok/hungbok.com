@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+.sale-item .on-sale.timer-container::after {
+    content: "On Sale";
+}
+
+.sale-more-button::before {
+    content: "More";
+}
+
+.sale-more-button.highlight::before {
+    content: "Show less";
+}
+
+.sale-text::after {
+    content: "You can only check recent events.";
+}
+
+.item::before {
+    content: "Expired";
+}
+
+.item.upcoming::before {
+    content: "Time's up!";
+}
+
+.item.steam a::after {
+    content: "Steam";
+}
+
+.item.epic a::after {
+    content: "Epic Games Store";
+}
+
+.item.gog a::after {
+    content: "GOG";
+}
+
+.item.ubi a::after {
+    content: "Ubisoft Store";
+}
+
+.item.fanatical a::after {
+    content: "Fanatical";
+}
+
+.item.humble a::after {
+    content: "Humble Bundle";
+}
+
+.item.prime a::after {
+    content: "Prime Gaming";
+}
+
+.item.psplus a::after {
+    content: "Playstation Store";
+}
+
+.item.xbox a::after {
+    content: "Xbox Store";
+}
+
+.item a::before {
+    content: "Claim on "!important;
+}
+
+.item.bundle a::before {
+    content: "Buy on "!important;
+}
+
+.item.psplus a::before,
+.item.prime a::before,
+.item.choice a::before {
+    content: "Subscribe on "!important;
+}
+
+.item.upcoming a::before {
+    content: "Go to "!important;
+}
+
+.item.upcoming a::after {
+    content: "Check"!important;
+}
+
+.language-select[data-lang="en"]::before {
+    content: "";
+}
+
+.header-menu-text {
+    font-family: 'Ubuntu',"Lato","Noto Sans","Open Sans",sans-serif;
+}
+
+header .nav-home .header-menu-text::after {
+    content: "Home";
+}
+
+header .nav-tv .header-menu-text::after {
+    content: "Series";
+}
+
+header .nav-movie .header-menu-text::after {
+    content: "Movie";
+}
+
+header .nav-anime .header-menu-text::after {
+    content: "Anime";
+}
+
+header .nav-games .header-menu-text::after {
+    content: "Games";
+}
+
+header .nav-books .header-menu-text::after {
+    content: "Books";
+}
+
+header .nav-music .header-menu-text::after {
+    content: "Music";
+}
+
+header .nav-support .header-menu-text::after {
+    content: "Help";
+}
+
+.language-text::after {
+    font-family: 'Ubuntu',"Lato","Noto Sans","Open Sans",sans-serif;
+}
+
+.language-select[data-lang="en"] .language-text::after {
+    content: "English";
+}
+
+.language-select[data-lang="ja"] .language-text::after {
+    content: "Japanese";
+}
+
+.language-select[data-lang="ko"] .language-text::after {
+    content: "Korean";
+}
