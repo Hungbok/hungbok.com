@@ -3,6 +3,8 @@
 
 .sale-item .on-sale.timer-container::after {
     content: "On Sale";
+    margin-top: 8px;
+    display: block;
 }
 
 .sale-more-button::before {
