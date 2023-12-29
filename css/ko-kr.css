@@ -5,11 +5,11 @@
 }
 
 .sale-more-button::before {
-    content: "펼치기";
+    content: "더보기";
 }
 
 .sale-more-button.highlight::before {
-    content: "접기";
+    content: "간략히";
 }
 
 .sale-text::after {
