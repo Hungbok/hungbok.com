@@ -98,7 +98,7 @@ header .nav-home .header-menu-text::after {
 }
 
 header .nav-tv .header-menu-text::after {
-    content: "Series";
+    content: "TV Series";
 }
 
 header .nav-movie .header-menu-text::after {

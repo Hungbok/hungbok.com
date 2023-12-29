@@ -119,7 +119,7 @@ header .nav-music .header-menu-text::after {
 }
 
 header .nav-support .header-menu-text::after {
-    content: "サポート";
+    content: "ヘルプ";
 }
 
 .language-text::after {
