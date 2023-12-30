@@ -1,6 +1,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
+/* header */
+
+.language-select[data-lang="en"]::before {
+    content: "";
+}
+
+.header-menu-text {
+    font-family: 'Ubuntu',"Lato","Noto Sans","Open Sans",sans-serif;
+}
+
+header .nav-home .header-menu-text::after {
+    content: "Home";
+}
+
+header .nav-tv .header-menu-text::after {
+    content: "Series";
+}
+
+header .nav-movie .header-menu-text::after {
+    content: "Movie";
+}
+
+header .nav-anime .header-menu-text::after {
+    content: "Anime";
+}
+
+header .nav-games .header-menu-text::after {
+    content: "Games";
+}
+
+header .nav-books .header-menu-text::after {
+    content: "Books";
+}
+
+header .nav-music .header-menu-text::after {
+    content: "Music";
+}
+
+header .nav-support .header-menu-text::after {
+    content: "Help";
+}
+
+.language-text::after {
+    font-family: 'Ubuntu',"Lato","Noto Sans","Open Sans",sans-serif;
+}
+
+.language-select[data-lang="en"] .language-text::after {
+    content: "English";
+}
+
+.language-select[data-lang="ja"] .language-text::after {
+    content: "Japanese";
+}
+
+.language-select[data-lang="ko"] .language-text::after {
+    content: "Korean";
+}
+
+/* free games */
+
 .sale-item .on-sale.timer-container::after {
     content: "On Sale";
     margin-top: 8px;
@@ -83,60 +143,4 @@
 
 .item.upcoming a::after {
     content: "Check"!important;
-}
-
-.language-select[data-lang="en"]::before {
-    content: "";
-}
-
-.header-menu-text {
-    font-family: 'Ubuntu',"Lato","Noto Sans","Open Sans",sans-serif;
-}
-
-header .nav-home .header-menu-text::after {
-    content: "Home";
-}
-
-header .nav-tv .header-menu-text::after {
-    content: "TV Series";
-}
-
-header .nav-movie .header-menu-text::after {
-    content: "Movie";
-}
-
-header .nav-anime .header-menu-text::after {
-    content: "Anime";
-}
-
-header .nav-games .header-menu-text::after {
-    content: "Games";
-}
-
-header .nav-books .header-menu-text::after {
-    content: "Books";
-}
-
-header .nav-music .header-menu-text::after {
-    content: "Music";
-}
-
-header .nav-support .header-menu-text::after {
-    content: "Help";
-}
-
-.language-text::after {
-    font-family: 'Ubuntu',"Lato","Noto Sans","Open Sans",sans-serif;
-}
-
-.language-select[data-lang="en"] .language-text::after {
-    content: "English";
-}
-
-.language-select[data-lang="ja"] .language-text::after {
-    content: "Japanese";
-}
-
-.language-select[data-lang="ko"] .language-text::after {
-    content: "Korean";
 }

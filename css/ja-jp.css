@@ -1,5 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@700&display=swap');
 
+/* header */
+
+.language-select[data-lang="ja"]::before {
+    content: "";
+}
+
+.header-menu-text {
+    font-family: 'M PLUS 1 Code',"monospace","Lato","Noto Sans JP","Open Sans",sans-serif;
+}
+
+header .nav-home .header-menu-text::after {
+    content: "トップ";
+}
+
+header .nav-tv .header-menu-text::after {
+    content: "テレビ";
+}
+
+header .nav-movie .header-menu-text::after {
+    content: "シネマ";
+}
+
+header .nav-anime .header-menu-text::after {
+    content: "アニメ";
+}
+
+header .nav-games .header-menu-text::after {
+    content: "ゲーム";
+}
+
+header .nav-books .header-menu-text::after {
+    content: "ブック";
+}
+
+header .nav-music .header-menu-text::after {
+    content: "ソング";
+}
+
+header .nav-support .header-menu-text::after {
+    content: "ヘルプ";
+}
+
+.language-text::after {
+    font-family: 'M PLUS 1 Code',"monospace","Lato","Noto Sans JP","Open Sans",sans-serif;
+}
+
+.language-select[data-lang="en"] .language-text::after {
+    content: "英語";
+}
+
+.language-select[data-lang="ja"] .language-text::after {
+    content: "日本語";
+}
+
+.language-select[data-lang="ko"] .language-text::after {
+    content: "韓国語";
+}
+
+/* free games */
+
 .sale-item .on-sale.timer-container::after {
     content: "セール中";
 }
@@ -80,60 +140,4 @@
 
 .item.upcoming a::after {
     content: "する"!important;
-}
-
-.language-select[data-lang="ja"]::before {
-    content: "";
-}
-
-.header-menu-text {
-    font-family: 'M PLUS 1 Code',"monospace","Lato","Noto Sans JP","Open Sans",sans-serif;
-}
-
-header .nav-home .header-menu-text::after {
-    content: "トップ";
-}
-
-header .nav-tv .header-menu-text::after {
-    content: "テレビ";
-}
-
-header .nav-movie .header-menu-text::after {
-    content: "シネマ";
-}
-
-header .nav-anime .header-menu-text::after {
-    content: "アニメ";
-}
-
-header .nav-games .header-menu-text::after {
-    content: "ゲーム";
-}
-
-header .nav-books .header-menu-text::after {
-    content: "ブック";
-}
-
-header .nav-music .header-menu-text::after {
-    content: "ソング";
-}
-
-header .nav-support .header-menu-text::after {
-    content: "ヘルプ";
-}
-
-.language-text::after {
-    font-family: 'M PLUS 1 Code',"monospace","Lato","Noto Sans JP","Open Sans",sans-serif;
-}
-
-.language-select[data-lang="en"] .language-text::after {
-    content: "英語";
-}
-
-.language-select[data-lang="ja"] .language-text::after {
-    content: "日本語";
-}
-
-.language-select[data-lang="ko"] .language-text::after {
-    content: "韓国語";
 }
