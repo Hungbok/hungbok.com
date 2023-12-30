@@ -2,6 +2,10 @@
 
 /* 헤더 */
 
+.language-select[data-lang="ko"] {
+    pointer-events: none;
+}
+
 .language-select[data-lang="ko"]::before {
     content: "";
 }

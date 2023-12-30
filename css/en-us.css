@@ -3,6 +3,10 @@
 
 /* header */
 
+.language-select[data-lang="en"] {
+    pointer-events: none;
+}
+
 .language-select[data-lang="en"]::before {
     content: "";
 }
