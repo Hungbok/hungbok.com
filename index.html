@@ -77,6 +77,44 @@ reproduced or used in any manner whatsoever.
                 <div class="lang-background" data-lang="country"></div>
             </div>
         </main>
+        <style>
+            @media (max-width: 600px) {
+                .lang-data {
+                    font-size: 20px;
+                    line-height: 29px;
+                }
+                .lang-title {
+                    font-size: 40px;
+                    width: 100%;
+                    line-height: 58px;
+                }
+                #ip {
+                    font-size: 60px;
+                    line-height: 58px;
+                }
+                .lang-background {
+                    font-size: 100px;
+                }
+            }
+            @media (max-width: 400px) {
+                .lang-data {
+                    font-size: 10px;
+                    line-height: 15px;
+                }
+                .lang-title {
+                    font-size: 20px;
+                    width: 100%;
+                    line-height: 29px;
+                }
+                #ip {
+                    font-size: 40px;
+                    line-height: 58px;
+                }
+                .lang-background {
+                    font-size: 60px;
+                }
+            }
+        </style>
         <script>
             $(document).ready(function() {
                 let userLang = navigator.language || navigator.userLanguage;
