@@ -44,23 +44,23 @@
                 <div class="error-404-container">
                     <div class="error-404-content">
                         <div class="error-404-title" data-lang="title">페이지가 길을 잃었습니다...</div>
-                        <div class="error-404-subtitle" data-lang="title">페이지가 없거나 이동 혹은 삭제되었습니다.<br>주소를 다시 한번 확인해주세요.</div>
-                        <div class="error-404-subtitle previous" data-lang="title"></div>
+                        <div class="error-404-subtitle" data-lang="subtitle">페이지가 없거나 이동 혹은 삭제되었습니다.<br>주소를 다시 한번 확인해주세요.</div>
+                        <div class="error-404-subtitle previous" data-lang="previous"></div>
                         <a class="error-404-back" onclick="window.history.back()">
-                            <p>이전 페이지</p>
+                            <p data-lang="back">이전 페이지</p>
                         </a>
-                        <div class="error-404-subtitle middle" data-lang="title">혹은</div>
+                        <div class="error-404-subtitle middle" data-lang="middle">혹은</div>
                         <a class="error-404-home" href="https://www.hungbok.com">
-                            <p>메인</p>
+                            <p data-lang="home">메인</p>
                         </a>
-                        <div class="error-404-subtitle next" data-lang="title">으로 돌아가기</div>
-                        <div class="error-404-subtitle" data-lang="title">다른 문제가 있나요?</div>
+                        <div class="error-404-subtitle next" data-lang="next">으로 돌아가기</div>
+                        <div class="error-404-subtitle" data-lang="text">다른 문제가 있나요?</div>
                         <a class="error-404-help" href="https://help.hungbok.com/contact">
-                            <p>문의하기</p>
+                            <p data-lang="help">문의하기</p>
                         </a>
                     </div>
                     <div class="error-404-lang-selecter">
-                        <div data-lang="subtitle"></div>
+                        <div data-lang="language"></div>
                         <div id="select_lang">
                             <div class="lang-option" data-lang="en" data-value="en" selected=""></div>
                             <div class="lang-option" data-lang="ja" data-value="ja"></div>
@@ -74,5 +74,80 @@
         <div id="message-container"></div>
         <div id="top-button" onclick="topButton()">▲</div>
         <footer></footer>
+        <script>
+            $(document).ready(function() {
+                let userLang = navigator.language || navigator.userLanguage;
+                userLang = userLang.split("-")[0]; // 브라우저 언어에서 기본 언어 코드만 추출
+                // 브라우저 언어가 선택 가능한 언어 중 하나인지 확인
+                const availableLangs = $("#select_lang .lang-option").map(function() { return $(this).attr('data-value'); }).get();
+                if (!availableLangs.includes(userLang)) {
+                    userLang = 'en'; // 브라우저 언어가 선택 가능한 언어 중 하나가 아니면 기본값으로 영어 설정
+                }
+                $("#select_lang .lang-option[data-value='" + userLang + "']").attr('selected', 'selected');
+                loadCountry(userLang);
+                setText(userLang);
+            
+                $("#select_lang").on('click', '.lang-option', function() {
+                    $("#select_lang .lang-option").removeAttr('selected');
+                    $(this).attr('selected', 'selected');
+                    const selectedLang = $(this).attr('data-value');
+                    loadCountry(selectedLang);
+                    setText(selectedLang);
+                });
+            });
+            
+            function loadCountry(lang) {}
+            
+            function setText(lang) {
+                const texts = {
+                    "en": {
+                        language: "Language",
+                        title: "Oops! Looks like this page wandered off...",
+                        subtitle: "The page may have been moved or deleted.<br>Please double-check the address!",
+                        previous: "Back to",
+                        back: "Previous page",
+                        middle: "or",
+                        home: "Home",
+                        next: "",
+                        text: "Need more help?",
+                        help: "Contact Us",
+                    },
+                    "ja": {
+                        language: "言語",
+                        title: "迷子になったようです…",
+                        subtitle: "ページが移動または削除された可能性があります。<br>もう一度確認してください！",
+                        previous: "",
+                        back: "前のページ",
+                        middle: "または",
+                        home: "トップ",
+                        next: "に戻る",
+                        text: "まだ問題がありますか？",
+                        help: "お問い合わせ",
+                    },
+                    "ko": {
+                        language: "언어",
+                        title: "페이지가 길을 잃었습니다...",
+                        subtitle: "페이지가 없거나 이동 혹은 삭제되었습니다.<br>주소를 다시 한번 확인해주세요.",
+                        previous: "",
+                        back: "이전 페이지",
+                        middle: "혹은",
+                        home: "메인",
+                        next: "으로 돌아가기",
+                        text: "다른 문제가 있나요?",
+                        help: "문의하기",
+                    }
+                };
+                $("[data-lang='language']").text(texts[lang].language);
+                $("[data-lang='title']").text(texts[lang].title);
+                $("[data-lang='subtitle']").text(texts[lang].subtitle);
+                $("[data-lang='previous']").text(texts[lang].previous);
+                $("[data-lang='back']").text(texts[lang].back);
+                $("[data-lang='middle']").text(texts[lang].middle);
+                $("[data-lang='home']").text(texts[lang].home);
+                $("[data-lang='next']").text(texts[lang].next);
+                $("[data-lang='text']").text(texts[lang].text);
+                $("[data-lang='help']").text(texts[lang].help);
+            }
+        </script>
     </body>
 </html>
