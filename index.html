@@ -60,115 +60,289 @@ reproduced or used in any manner whatsoever.
     </head>
     <body class="main">
         <main>
-            <div class="container">
-                <div class="lang-data">
-                    <span class="lang-subtitle" data-lang="subtitle"></span>
-                    <div class="lang-title" data-lang="title"></div>
-                    <div id="ip" class="lang-title" data-lang="code"></div>
+            <section>
+              <div class="container">
+                <div class="text-animation">
+                  <div class="text-wrapper first">
+                    <h1 class="title">Title</h1>
+                    <h2 class="countdown">00:00:00</h2>
+                    <h3 class="text">Text</h3>
+                  </div>
+                  <div class="text-wrapper second">
+                    <h1 class="title">Title</h1>
+                    <h2 class="countdown">00:00:00</h2>
+                    <h3 class="text">Text</h3>
+                  </div>
                 </div>
-                <div class="lang-selecter">
-                    <div data-lang="ip"></div>
-                    <div id="select_lang">
-                        <div class="lang-option" data-value="en" selected>en</div>
-                        <div class="lang-option" data-value="ja">ja</div>
-                        <div class="lang-option" data-value="ko">ko</div>
-                    </div>
+                <div class="waveDiv animation-wave">
+                  <div class="wave-content-wrapper first-wave">
+                    <div class="wave-image first-image" style="background-image: url('https://www.yudiz.com/codepen/wave-animation/first-wave.png')"></div>
+                  </div>
+                  <div class="wave-content-wrapper second-wave">
+                    <div class="wave-image second-image" style="background-image: url('https://www.yudiz.com/codepen/wave-animation/second-wave.png')"></div>
+                  </div>
+                  <div class="wave-content-wrapper third-wave">
+                    <div class="wave-image third-image" style="background-image: url('https://www.yudiz.com/codepen/wave-animation/third-wave.png')"></div>
+                  </div>
                 </div>
-                <div class="lang-background" data-lang="country"></div>
-            </div>
+              </div>
+            </section>
         </main>
         <style>
-            @media (max-width: 600px) {
-                .lang-data {
-                    font-size: 20px;
-                    line-height: 29px;
-                }
-                .lang-title {
-                    font-size: 40px;
-                    width: 100%;
-                    line-height: 58px;
-                }
-                #ip {
-                    font-size: 60px;
-                    line-height: 58px;
-                }
-                .lang-background {
-                    font-size: 100px;
-                }
+          @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Nunito", sans-serif;
+          }
+          .text-animation {
+            background: #000;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+          }
+          .text-wrapper {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -62%);
+            z-index: 4;
+            -ms-user-select: none;
+            -moz-user-select: -moz-none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            user-select: none;
+          }
+          
+          .text-wrapper h2 {
+            color: #fff;
+            font-size: 15vw;
+            white-space: nowrap;
+            position: relative;
+          }
+          
+          .text-wrapper.first h2 {
+            color: transparent;
+            -webkit-text-stroke: 2px #fff;
+          }
+          
+          .text-wrapper.second h2 {
+            color: #fff;
+            animation: wave 4s ease-in-out infinite;
+          }
+          
+          .text-wrapper h1 {
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            font-size: 7.5vw;
+            white-space: nowrap;
+            position: relative;
+          }
+          
+          .text-wrapper h3 {
+            color: #fff;
+            font-size: 5vw;
+            white-space: nowrap;
+            position: relative;
+          }
+          
+          @keyframes wave {
+            /* start point */
+            0%,
+            100% {
+              clip-path: polygon(
+                0% 46%,
+                17% 45%,
+                34% 50%,
+                56% 61%,
+                69% 62%,
+                86% 60%,
+                100% 51%,
+                100% 100%,
+                0% 100%
+              );
             }
-            @media (max-width: 400px) {
-                .lang-data {
-                    font-size: 10px;
-                    line-height: 15px;
-                }
-                .lang-title {
-                    font-size: 20px;
-                    width: 100%;
-                    line-height: 29px;
-                }
-                #ip {
-                    font-size: 40px;
-                    line-height: 58px;
-                }
-                .lang-background {
-                    font-size: 60px;
-                }
+            /* Mid point */
+            50% {
+              clip-path: polygon(
+                0% 59%,
+                16% 64%,
+                33% 65%,
+                52% 61%,
+                70% 52%,
+                85% 47%,
+                100% 48%,
+                100% 100%,
+                0% 100%
+              );
             }
+          }
+          
+          /* ********************* Image Waves ************************ */
+          .waveDiv {
+            position: absolute;
+            overflow: hidden;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          }
+          .wave-content-wrapper {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+            bottom: -1px;
+            background-image: linear-gradient(to top, #111111 0%, #111111 30%);
+          }
+          .first-wave {
+            z-index: 3;
+            opacity: 0.5;
+          }
+          .second-wave {
+            z-index: 2;
+            opacity: 0.75;
+          }
+          .third-wave {
+            z-index: 1;
+          }
+          .wave-image {
+            width: 200%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            background-repeat: repeat no-repeat;
+            background-position: 0 bottom;
+            transform-origin: center bottom;
+          }
+          .first-image {
+            background-size: 50% 100px;
+          }
+          .animation-wave .first-image {
+            animation: move-wave 3s;
+            -webkit-animation: move-wave 3s;
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+          }
+          .second-image {
+            background-size: 50% 120px;
+          }
+          .animation-wave .second-image {
+            animation: waves 10s linear infinite;
+          }
+          .third-image {
+            background-size: 50% 140px;
+          }
+          .animation-wave .third-image {
+            animation: waves 15s linear infinite;
+          }
+          
+          @keyframes waves {
+            0% {
+              transform: translateX(0) scaleY(1);
+            }
+            50% {
+              transform: translateX(-25%) scaleY(0.55);
+            }
+            100% {
+              transform: translateX(-50%) scaleY(1);
+            }
+          }
         </style>
         <script>
-            $(document).ready(function() {
-                let userLang = navigator.language || navigator.userLanguage;
-                userLang = userLang.split("-")[0]; // 브라우저 언어에서 기본 언어 코드만 추출
-                // 브라우저 언어가 선택 가능한 언어 중 하나인지 확인
-                const availableLangs = $("#select_lang .lang-option").map(function() { return $(this).attr('data-value'); }).get();
-                if (!availableLangs.includes(userLang)) {
-                    userLang = 'en'; // 브라우저 언어가 선택 가능한 언어 중 하나가 아니면 기본값으로 영어 설정
-                }
-                $("#select_lang .lang-option[data-value='" + userLang + "']").attr('selected', 'selected');
-                loadCountry(userLang);
-                setText(userLang);
-            
-                $("#select_lang").on('click', '.lang-option', function() {
-                    $("#select_lang .lang-option").removeAttr('selected');
-                    $(this).attr('selected', 'selected');
-                    const selectedLang = $(this).attr('data-value');
-                    loadCountry(selectedLang);
-                    setText(selectedLang);
-                });
-            });
-            
-            function loadCountry(lang) {}
-            
-            function setText(lang) {
-                const texts = {
-                    "en": {
-                        title: "The site is preparing",
-                        subtitle: "Please visit again later",
-                        ip: "Language",
-                        code: "Mar 2024",
-                        country: "Coming soon",
-                    },
-                    "ja": {
-                        title: "サイトは準備中です",
-                        subtitle: "後でもう一度訪問してください",
-                        ip: "言語",
-                        code: "2024年 3月",
-                        country: "近日公開",
-                    },
-                    "ko": {
-                        title: "사이트가 준비 중입니다",
-                        subtitle: "나중에 다시 방문하십시오",
-                        ip: "언어",
-                        code: "2024년 3월",
-                        country: "곧 공개",
-                    }
-                };
-                $("[data-lang='title']").text(texts[lang].title);
-                $("[data-lang='subtitle']").text(texts[lang].subtitle);
-                $("[data-lang='ip']").text(texts[lang].ip);
-                $("[data-lang='code']").text(texts[lang].code);
-                $("[data-lang='country']").text(texts[lang].country);
-            }
-        </script>
+          // 사용자의 브라우저 언어 설정 값을 가져옵니다.
+          var userLang = navigator.language || navigator.userLanguage; 
+  
+          // 한국어, 영어, 일본어로 되어있는 객체를 만듭니다.
+          var textObj = {
+              'ko': {
+                  'title': '사이트 오픈까지',
+                  'text': '나중에 다시 방문해 주세요',
+                  'date': '',
+                  'countdown': '',
+                  'end': '종료'
+              },
+              'en': {
+                  'title': 'Until site opening',
+                  'text': 'Please visit again later',
+                  'date': '',
+                  'countdown': '',
+                  'end': 'End'
+              },
+              'ja': {
+                  'title': 'サイトオープンまで',
+                  'text': '後でまた訪問してください',
+                  'date': '',
+                  'countdown': '',
+                  'end': '終了'
+              }
+          };
+  
+          // 사용자의 언어에 따라 표시할 문구를 결정합니다.
+          var displayText;
+          if (userLang.startsWith('ko')) {
+              displayText = textObj['ko'];
+          } else if (userLang.startsWith('ja')) {
+              displayText = textObj['ja'];
+          } else {
+              displayText = textObj['en'];
+          }
+  
+          // HTML 요소에 문구를 설정합니다.
+          var titles = document.getElementsByClassName('title');
+          var texts = document.getElementsByClassName('text');
+          var dates = document.getElementsByClassName('date');
+          var countdowns = document.getElementsByClassName('countdown');
+  
+          for (var i = 0; i < titles.length; i++) {
+              titles[i].innerHTML = displayText['title'];
+          }
+          for (var i = 0; i < texts.length; i++) {
+              texts[i].innerHTML = displayText['text'];
+          }
+          for (var i = 0; i < dates.length; i++) {
+              dates[i].innerHTML = displayText['date'];
+          }
+  
+          // 카운트다운 종료 시간을 설정합니다.
+          var countDownDate = new Date(Date.UTC(2024, 2, 24));
+  
+          // 1초마다 카운트다운을 업데이트합니다.
+          var countdownInterval = setInterval(function() {
+              var now = new Date();
+  
+              // 현재 시간과 종료 시간 사이의 차이를 계산합니다.
+              var distance = countDownDate - now;
+              
+              // 일, 시간, 분, 초를 계산하고 두 자리로 표시합니다.
+              var days = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2);
+              var hours = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
+              var minutes = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
+              var seconds = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
+
+              // 카운트다운을 표시합니다.
+              for (var i = 0; i < countdowns.length; i++) {
+                  if (days > 0) {
+                      countdowns[i].innerHTML = displayText['countdown'] + days + ":" + hours + ":" + minutes + ":" + seconds;
+                  } else {
+                      countdowns[i].innerHTML = displayText['countdown'] + hours + ":" + minutes + ":" + seconds;
+                  }
+              }
+  
+              // 카운트다운이 종료되면 텍스트를 업데이트합니다.
+              if (distance < 0) {
+                  clearInterval(countdownInterval);
+                  for (var i = 0; i < countdowns.length; i++) {
+                      countdowns[i].innerHTML = displayText['countdown'] + displayText['end'];
+                  }
+              }
+          }, 1000);
+      </script>
     </body>
 </html>
