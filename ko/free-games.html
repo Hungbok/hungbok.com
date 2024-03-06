@@ -58,15 +58,15 @@
                 <div class="top-background-shadow" style="background-image: url(//data.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
             </div>
             <section class="section">
-                <button class="filterDataBtn" data-type="all">전체 보기</button> 
-                <button class="filterDataBtn" data-type="games">게임</button>
-                <button class="filterDataBtn" data-type="bundle">번들</button>
-                <button class="filterDataBtn" data-type="subscription">구독</button>
+                <button class="filterDataBtn" onclick="filterData('all')">전체 보기</button> 
+                <button class="filterDataBtn" onclick="filterData('games')">게임</button>
+                <button class="filterDataBtn" onclick="filterData('bundle')">번들</button>
+                <button class="filterDataBtn" onclick="filterData('subscription')">구독</button>
                 <button id="dateFilterBtn">Expired Dates Filter</button>
-                <button class="filterPlatformBtn" data-platform="all">전체 보기</button>
-                <button class="filterPlatformBtn" data-platform="steam">스팀</button>
-                <button class="filterPlatformBtn" data-platform="epicgames">에픽게임즈</button>
-                <button class="filterPlatformBtn" data-platform="gog">GOG</button>
+                <button class="filterPlatformBtn" onclick="filterPlatform('all')">전체 보기</button>
+                <button class="filterPlatformBtn" onclick="filterPlatform('steam')">스팀</button>
+                <button class="filterPlatformBtn" onclick="filterPlatform('epicgames')">에픽게임즈</button>
+                <button class="filterPlatformBtn" onclick="filterPlatform('gog')">GOG</button>
                 <div id="dataContainer"></div>
                 <div id="serverTime"></div>
                 <div id="localTime"></div>
