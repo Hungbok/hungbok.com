@@ -156,6 +156,23 @@
                                                 <div class="more-info-item-text platform">{pc}{console}{mobile}</div>
                                             </div>
                                             <div class="more-info-item">
+                                                <p class="more-info-item-title">Age Rating</p>
+                                                <div class="more-info-item-text age">
+                                                    <div class="icon-age{age}" ttt="Age Rating"></div>
+                                                    <div class="icon-iarc{iarc}" ttt="IARC"></div>
+                                                    <div class="icon-esrb{esrb}" ttt="ESRB"></div>
+                                                    <div class="icon-pegi{pegi}" ttt="PEGI"></div>
+                                                    <div class="icon-usk{usk}" ttt="USK"></div>
+                                                    <div class="icon-rars{rars}" ttt="RARS"></div>
+                                                    <div class="icon-cero{cero}" ttt="CERO"></div>
+                                                    <div class="icon-grac{grac}" ttt="GRAC"></div>
+                                                    <div class="icon-gsrr{gsrr}" ttt="GSRR"></div>
+                                                    <div class="icon-acb{acb}" ttt="ACB"></div>
+                                                    <div class="icon-classind{classind}" ttt="ClassInd"></div>
+                                                    <div class="icon-appstoreage{appstoreage}" ttt="App Store"></div>
+                                                </div>
+                                            </div>
+                                            <div class="more-info-reviews">
                                                 <p class="more-info-item-title">Reviews</p>
                                                 <div class="more-info-item-text reviews">
                                                     <div class="metacritic icon-{metacritic_class1}">{metacritic1}</div>
@@ -172,7 +189,15 @@
                                                         <div class="opencritic-rating">
                                                             <img src="//media.hungbok.net/image/icon/{opencritic_rating}.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
                                                         </div>
-                                                        <div class="top-critic-average">{top_critic_average}</div>
+                                                        <div class="top-critic-average">
+                                                            <div class="score-orb" style="width: 30px; height: 30px;">
+                                                                <div class="outer-orb"></div>
+                                                                <svg viewBox="0 0 32 32" style="transform: rotate(-18deg);">
+                                                                    <circle r="16" cx="16" cy="16" class="mighty" style="stroke-dasharray: 10, 100;"></circle>
+                                                                </svg>
+                                                                <div class="inner-orb"><p>{top_critic_average}</p></div>
+                                                            </div>
+                                                        </div>
                                                         <div class="critics-recommend">
                                                             <div class="score-orb" style="width: 30px; height: 30px;">
                                                                 <div class="outer-orb"></div>
@@ -191,23 +216,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">Age Rating</p>
-                                                <div class="more-info-item-text age">
-                                                    <div class="icon-age{age}" ttt="Age Rating"></div>
-                                                    <div class="icon-iarc{iarc}" ttt="IARC"></div>
-                                                    <div class="icon-esrb{esrb}" ttt="ESRB"></div>
-                                                    <div class="icon-pegi{pegi}" ttt="PEGI"></div>
-                                                    <div class="icon-usk{usk}" ttt="USK"></div>
-                                                    <div class="icon-rars{rars}" ttt="RARS"></div>
-                                                    <div class="icon-cero{cero}" ttt="CERO"></div>
-                                                    <div class="icon-grac{grac}" ttt="GRAC"></div>
-                                                    <div class="icon-gsrr{gsrr}" ttt="GSRR"></div>
-                                                    <div class="icon-acb{acb}" ttt="ACB"></div>
-                                                    <div class="icon-classind{classind}" ttt="ClassInd"></div>
-                                                    <div class="icon-appstoreage{appstoreage}" ttt="App Store"></div>
                                                 </div>
                                             </div>
                                             <div class="more-info-release">
