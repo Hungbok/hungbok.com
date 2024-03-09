@@ -173,7 +173,23 @@
                                                             <img src="//media.hungbok.net/image/icon/{opencritic_rating}.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
                                                         </div>
                                                         <div class="top-critic-average">{top_critic_average}</div>
-                                                        <div class="critics-recommend">{critics_recommend}</div>
+                                                        <div class="critics-recommend">
+                                                            <div class="score-orb" style="width: 20px; height: 20px;">
+                                                                <div class="outer-orb"></div>
+                                                                <svg viewBox="0 0 32 32" style="width: 20px; height: 20px; transform: rotate(-18deg);">
+                                                                    <defs>
+                                                                        <linearGradient id="mightygradient">
+                                                                            <stop offset="0" class="mighty-start"></stop>
+                                                                            <stop offset="22%" class="mighty-start"></stop>
+                                                                            <stop offset="78%" class="mighty-stop"></stop>
+                                                                            <stop offset="100%" class="mighty-stop"></stop>
+                                                                        </linearGradient>
+                                                                    </defs>
+                                                                    <circle r="16" cx="16" cy="16" fill="url(#mightygradient)" class="mightyrecommended" style="stroke-dasharray: 10, 100;"></circle>
+                                                                </svg>
+                                                                <div class="inner-orb"><p>{critics_recommend}</p></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
