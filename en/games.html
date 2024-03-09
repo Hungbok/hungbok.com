@@ -157,7 +157,7 @@
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">Reviews</p>
-                                                <div class="more-info-item-text">
+                                                <div class="more-info-item-text reviews">
                                                     <div class="metacritic icon-{metacritic_class1}">{metacritic1}</div>
                                                     <div class="metacritic icon-{metacritic_class2}">{metacritic2}</div>
                                                     <div class="metacritic icon-{metacritic_class3}">{metacritic3}</div>
@@ -168,9 +168,13 @@
                                                     <div class="metacritic icon-{metacritic_class8}">{metacritic8}</div>
                                                     <div class="metacritic icon-{metacritic_class9}">{metacritic9}</div>
                                                     <div class="metacritic icon-{metacritic_class10}">{metacritic10}</div>
-                                                    <div class="opencritic-rating" ttt="OpenCritic">{opencritic_rating}</div>
-                                                    <div class="top-critic-average" ttt="OpenCritic">{top_critic_average}</div>
-                                                    <div class="critics-recommend" ttt="OpenCritic">{critics_recommend}</div>
+                                                    <div class="opencritic">
+                                                        <div class="opencritic-rating">
+                                                            <img src="//media.hungbok.net/image/icon/{opencritic_rating}.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
+                                                        </div>
+                                                        <div class="top-critic-average">{top_critic_average}</div>
+                                                        <div class="critics-recommend">{critics_recommend}</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="more-info-item">
