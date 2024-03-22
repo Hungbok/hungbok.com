@@ -61,12 +61,12 @@
                 <h1>진행중인 할인</h1>
                 <div id="outnowDataContainer"></div>
                 <div class="filter-container">
-                    <div class="filter-content">
-                        <div class="filterDataBtn active" data-type="all" onclick="filterData('all')">전체</div> 
-                        <div class="filterDataBtn" data-type="pc" onclick="filterData('pc')">PC</div>
+                    <div id="filter-type" class="filter-content">
+                        <div class="filterDataBtn" data-type="all" onclick="filterData('all')">전체</div> 
+                        <div class="filterDataBtn active" data-type="pc" onclick="filterData('pc')">PC</div>
                         <div class="filterDataBtn" data-type="console" onclick="filterData('console')">콘솔</div>
                     </div>
-                    <div class="filter-content">
+                    <div id="filter-platform" class="filter-content">
                         <div class="filterPlatformBtn active" data-platform="all" onclick="filterPlatform('all')">전체</div>
                         <div class="filterPlatformBtn" ttt="스팀" data-platform="steam" onclick="filterPlatform('steam')"><img src="//media.hungbok.net/image/icon/steam.svg"></div>
                         <div class="filterPlatformBtn" ttt="에픽게임즈 스토어" data-platform="epicgamesstore" onclick="filterPlatform('epicgamesstore')"><img src="//media.hungbok.net/image/icon/epicgamesstore.svg"></div>
