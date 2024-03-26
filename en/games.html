@@ -268,46 +268,55 @@
                     <div class="system-requirements">
                         <div class="more-info-release">
                             <p class="more-info-item-title">System Requirements</p>
-                            <div class="more-info-item-text release system-requirements">
-                                <div class="release-type">Minimum</div>
-                                <div class="release-type">Recommended</div>
-                                <div>
-                                    <p>OS</p><p>{minimum_os}</p>
-                                </div>
-                                <div>
-                                    <p>OS</p><p>{recommended_os}</p>
-                                </div>
-                                <div>
-                                    <p>Processor</p>{minimum_processor}<p></p>
-                                </div>
-                                <div>
-                                    <p>Processor</p>{recommended_processor}<p></p>
-                                </div>
-                                <div>
-                                    <p>Memory</p><p>{minimum_memory}</p>
-                                </div>
-                                <div>
-                                    <p>Memory</p><p>{recommended_memory}</p>
-                                </div>
-                                <div>
-                                    <p>Graphics</p><p>{minimum_graphics}</p>
-                                </div>
-                                <div>
-                                    <p>Graphics</p><p>{recommended_graphics}</p>
-                                </div>
-                                <div>
-                                    <p>Storage</p><p>{minimum_storage}</p>
-                                </div>
-                                <div>
-                                    <p>Storage</p><p>{recommended_storage}</p>
-                                </div>
-                                <div>
-                                    <p>Other</p><p>{minimum_other}</p>
-                                </div>
-                                <div>
-                                    <p>Other</p><p>{recommended_other}</p>
+                            <ul class="tabs">
+                              <li class="tab-link current" data-tab="tab-1">tab1</li>
+                              <li class="tab-link" data-tab="tab-2">tab2</li>
+                              <li class="tab-link" data-tab="tab-3">tab3</li>
+                            </ul>
+                            <div id="tab-1" class="tab-content current">
+                                <div class="more-info-item-text release system-requirements">
+                                    <div class="release-type">Minimum</div>
+                                    <div class="release-type">Recommended</div>
+                                    <div>
+                                        <p>OS</p><p>{minimum_os}</p>
+                                    </div>
+                                    <div>
+                                        <p>OS</p><p>{recommended_os}</p>
+                                    </div>
+                                    <div>
+                                        <p>Processor</p>{minimum_processor}<p></p>
+                                    </div>
+                                    <div>
+                                        <p>Processor</p>{recommended_processor}<p></p>
+                                    </div>
+                                    <div>
+                                        <p>Memory</p><p>{minimum_memory}</p>
+                                    </div>
+                                    <div>
+                                        <p>Memory</p><p>{recommended_memory}</p>
+                                    </div>
+                                    <div>
+                                        <p>Graphics</p><p>{minimum_graphics}</p>
+                                    </div>
+                                    <div>
+                                        <p>Graphics</p><p>{recommended_graphics}</p>
+                                    </div>
+                                    <div>
+                                        <p>Storage</p><p>{minimum_storage}</p>
+                                    </div>
+                                    <div>
+                                        <p>Storage</p><p>{recommended_storage}</p>
+                                    </div>
+                                    <div>
+                                        <p>Other</p><p>{minimum_other}</p>
+                                    </div>
+                                    <div>
+                                        <p>Other</p><p>{recommended_other}</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div id="tab-2" class="tab-content">tab content2</div>
+                            <div id="tab-3" class="tab-content">tab content3</div>
                         </div>
                         <div class="more-info-language">
                             <p class="more-info-item-title">Languages Supported</p>
