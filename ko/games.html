@@ -212,11 +212,11 @@
                         </div>
                         <div class="show-more"></div>
                     </div>
-                    <div class="review">
+                    <div class="review {review}">
                         <div class="more-info-reviews">
                             <p class="section-info-item-title">평가</p>
                             <div class="more-info-item-text reviews">
-                                <div class="metacritic-reviews">
+                                <div class="metacritic-reviews {metacritic}">
                                     <div class="metacritic-title">
                                         <img src="//media.hungbok.net/image/logo/metacritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
                                     </div>
@@ -233,7 +233,7 @@
                                     <div class="metacritic"><div {metacritic_class11}></div>{metacritic11}</div>
                                     <div class="metacritic"><div {metacritic_class12}></div>{metacritic12}</div>
                                 </div>
-                                <div class="opencritic">
+                                <div class="opencritic {opencritic}">
                                     <div class="opencritic-title">
                                         <img src="//media.hungbok.net/image/logo/opencritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
                                     </div>
@@ -272,12 +272,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="more-info-release">
+                    <div class="more-info-release {system_requirements}">
                         <p class="section-info-item-title">시스템 요구 사항</p>
                         <div class="more-info-tabs">
-                            <div class="more-info-tab" onclick="changeTab(event, 0)">윈도우</div>
-                            <div class="more-info-tab" onclick="changeTab(event, 1)">맥</div>
-                            <div class="more-info-tab" onclick="changeTab(event, 2)">리눅스</div>
+                            <div class="more-info-tab {system_requirements_tab1}" onclick="changeTab(event, 0)">윈도우</div>
+                            <div class="more-info-tab {system_requirements_tab2}" onclick="changeTab(event, 1)">맥</div>
+                            <div class="more-info-tab {system_requirements_tab3}" onclick="changeTab(event, 2)">리눅스</div>
                         </div>
                         <div class="more-info-tab-content" id="tab-content-0">
                             <div class="system-requirements">
