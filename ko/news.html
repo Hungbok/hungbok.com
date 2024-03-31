@@ -55,7 +55,7 @@
         <header></header>
         <main>
             <div class="top-backgrounds">
-                <div class="top-background" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
+                <div class="top-background" style="background-image: url(//media.hungbok.net/image/news/{url}.jpg);"></div>
             </div>
             <section class="section">
                 <div class="top-content">
@@ -69,12 +69,12 @@
                         <div class="content-name">
                             <div class="content-title">{title}</div>
                             <div class="content-date">
-                                <a>{url}</a>
-                                <a>{share}</a>
+                                <a>{date}</a>
+                                <a>{writer}</a>
                             </div>
                         </div>
                         <div class="descriptions">
-                            <div class="description">{plot}</div>
+                            <div class="description">{content}</div>
                         </div>
                         <div class="additional-links">
                             <div class="share-open">
@@ -95,12 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="side-content">
-                        <div class="info">
-                            <div class="key-art">
-                                <img {capsule} onerror="showError(this);" loading="lazy">
-                            </div>
-                        </div>
+                    <div class="side-content"></div>
                     </div>
                     <div class="content-path">
                         <a href="https://www.hungbok.com">메인</a>
