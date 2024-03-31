@@ -58,7 +58,14 @@
                 <div class="top-background" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
             </div>
             <section class="section">
-                <div class="top-content"></div>
+                <div class="top-content">
+                    <div class="top-content-name">
+                        <div class="content-path">
+                            <a>{type}</a>
+                        </div>
+                        <div class="content-title">{title}</div>
+                    </div>
+                </div>
                 <div class="middle-content">
                     <div class="content-name">
                         <div class="content-path">
@@ -68,8 +75,7 @@
                         </div>
                         <div class="content-title">{title}</div>
                     </div>
-                    <div class="descriptions">{plot}
-                    </div>
+                    <div class="descriptions">{plot}</div>
                     <div class="info">
                         <div class="key-art">
                             <img {capsule} onerror="showError(this);" loading="lazy">
