@@ -61,7 +61,10 @@
                 <div class="error-404-container">
                     <div class="error-404-content">
                         <div class="error-404-title" data-lang="title">Oops! Looks like this page wandered off...</div>
-                        <div class="error-404-subtitle" data-lang="subtitle">The page may have been moved or deleted.<br>Please double-check the address!</div>
+                        <div class="error-404-subtitle">
+                            <div data-lang="subtitle">The page may have been moved or deleted.</div>
+                            <div data-lang="subtitle2">Please double-check the address!</div>
+                        </div>
                         <div class="error-404-subtitle previous" data-lang="previous">Back to</div>
                         <a class="error-404-back" onclick="window.history.back()">
                             <p data-lang="back">Previous page</p>
@@ -120,7 +123,8 @@
                     "en": {
                         language: "Language",
                         title: "Oops! Looks like this page wandered off...",
-                        subtitle: "The page may have been moved or deleted.<br>Please double-check the address!",
+                        subtitle: "The page may have been moved or deleted.",
+                        subtitle2: "Please double-check the address!",
                         previous: "Back to",
                         back: "Previous page",
                         middle: "or",
@@ -132,7 +136,8 @@
                     "ja": {
                         language: "言語",
                         title: "迷子になったようです…",
-                        subtitle: "ページが移動または削除された可能性があります。<br>もう一度確認してください！",
+                        subtitle: "ページが移動または削除された可能性があります。",
+                        subtitle2: "もう一度確認してください！",
                         previous: "",
                         back: "前のページ",
                         middle: "または",
@@ -144,7 +149,8 @@
                     "ko": {
                         language: "언어",
                         title: "페이지가 길을 잃었습니다...",
-                        subtitle: "페이지가 없거나 이동 혹은 삭제되었습니다.<br>주소를 다시 한번 확인해주세요.",
+                        subtitle: "페이지가 없거나 이동 혹은 삭제되었습니다.",
+                        subtitle2: "주소를 다시 한번 확인해주세요.",
                         previous: "",
                         back: "이전 페이지",
                         middle: "혹은",
@@ -157,6 +163,7 @@
                 $("[data-lang='language']").text(texts[lang].language);
                 $("[data-lang='title']").text(texts[lang].title);
                 $("[data-lang='subtitle']").text(texts[lang].subtitle);
+                $("[data-lang='subtitle2']").text(texts[lang].subtitle2);
                 $("[data-lang='previous']").text(texts[lang].previous);
                 $("[data-lang='back']").text(texts[lang].back);
                 $("[data-lang='middle']").text(texts[lang].middle);
