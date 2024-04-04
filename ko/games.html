@@ -56,12 +56,15 @@
         <header></header>
         <main>
             <div id="warning" style="display: none;">
-                <p>나이를 확인해주세요</p>
+                <p>연령 제한</p>
+                <h1>{title}</h1>
+                <p>이 콘텐츠는 일부 사용자에게는 부적절할 수 있습니다.</p>
                 <div class="age-check-container">
+                    <p>계속하려면 생년월일을 입력하세요</p>
                     <input id="age-check-year" type="text" maxlength="4" placeholder="YYYY" onblur="completeYear(this)" oninput="moveFocusToNextInput(this, 4)"/>
                     <input id="age-check-month" type="text" maxlength="2" placeholder="MM" onblur="completeMonth(this)" oninput="moveFocusToNextInput(this, 2)"/>
                     <input id="age-check-day" type="text" maxlength="2" placeholder="DD" onblur="completeDay(this)" oninput="moveFocusToNextInput(this, 999)"/>
-                    <button id="age-checking" disabled>확인</button>
+                    <button id="age-checking" disabled>계속</button>
                     <input id="age-check-none" type="text">
                     <a class="age-check-back" onclick="window.history.back()">돌아가기</a>
                 </div>
