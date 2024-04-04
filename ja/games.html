@@ -55,6 +55,20 @@
     <body>
         <header></header>
         <main>
+            <div id="warning" style="display: none;">
+                <p>年齢制限あり</p>
+                <h1>{title}</h1>
+                <p>このコンテンツは、一部のユーザーに適さない可能性があります。</p>
+                <div class="age-check-container">
+                    <p>続けるには、生年月日を入力してください</p>
+                    <input id="age-check-year" type="text" maxlength="4" placeholder="YYYY" onblur="completeYear(this)" oninput="moveFocusToNextInput(this, 4)"/>
+                    <input id="age-check-month" type="text" maxlength="2" placeholder="MM" onblur="completeMonth(this)" oninput="moveFocusToNextInput(this, 2)"/>
+                    <input id="age-check-day" type="text" maxlength="2" placeholder="DD" onblur="completeDay(this)" oninput="moveFocusToNextInput(this, 999)"/>
+                    <button id="age-checking" disabled>続ける</button>
+                    <input id="age-check-none" type="text">
+                    <a class="age-check-back" onclick="window.history.back()">戻る</a>
+                </div>
+            </div>
             <div class="top-backgrounds">
                 <div class="top-background" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
                 <div class="top-background-mirror" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
