@@ -2,17 +2,17 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title id="page-title">게임 | HungBok</title>
+        <title id="page-title">애니메이션 | HungBok</title>
         <link rel="icon" href="//media.hungbok.net/image/hb/hb_symbol.svg" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
         <!-- <meta http-equiv="Cache-Control" content="no-cache">
         <meta http-equiv="Pragma" content="no-chche"> -->
         <meta http-equiv="Copyright" content="HungBok">
         <meta name="Robots" content="index, follow">
-        <meta id="meta-title" name="title" content="게임 | HungBok">
+        <meta id="meta-title" name="title" content="애니메이션 | HungBok">
         <meta name="description" content="흥미진진한 신작 게임, 예정된 애니메이션, 영화 개봉 일정, 그리고 방영중인 드라마까지! 이제 HungBok에서 모든 정보를 확인하세요. 데이터베이스에 담긴 정보를 통해 더욱 쉽게 검색하고, 놓치지 않고 즐길 수 있습니다. 지금 HungBok에서 새로운 세상을 만나보세요!">
         <meta property="og:ttl" content="3600">
-        <meta id="og-title" property="og:title" content="게임 | HungBok">
+        <meta id="og-title" property="og:title" content="애니메이션 | HungBok">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.hungbok.com">
         <meta id="og-image" property="og:image" content="//media.hungbok.net/image/hb/hb_property.png">
@@ -22,7 +22,7 @@
         <meta property="og:image:height" content="630">
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://www.hungbok.com">
-        <meta id="twitter-title" property="twitter:title" content="게임 | HungBok">
+        <meta id="twitter-title" property="twitter:title" content="애니메이션 | HungBok">
         <meta property="twitter:description" content="흥미진진한 신작 게임, 예정된 애니메이션, 영화 개봉 일정, 그리고 방영중인 드라마까지! 이제 HungBok에서 모든 정보를 확인하세요. 데이터베이스에 담긴 정보를 통해 더욱 쉽게 검색하고, 놓치지 않고 즐길 수 있습니다. 지금 HungBok에서 새로운 세상을 만나보세요!">
         <meta id="twitter-image" property="twitter:image" content="//media.hungbok.net/image/hb/hb_property.png">
         <link class="style" rel="stylesheet" type="text/css" href="//www.hungbok.net/css/main.css">
@@ -56,134 +56,32 @@
         <header></header>
         <main>
             <div class="top-backgrounds">
-                <div class="top-background" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
-                <div class="top-background-mirror" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
-                <div class="top-background-shadow" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
+                <div class="top-background" style="background-image: url(/data.hungbok.net/image/anime/{url}/hb_background.jpg);"></div>
             </div>
             <section class="section">
                 <div class="top-content">
-                    <h1 class="top-title">
-                        <img {logo} onerror="showError(this);" loading="lazy">
-                    </h1>
-                </div>
-                <div class="middle-content">
                     <div class="content-name">
                         <div class="content-path">
-                            <a href="https://www.hungbok.com">메인</a>
-                            <a href="https://www.hungbok.com/games">게임</a>
+                            <a href="https://www.hungbok.com">홈</a>
+                            <a href="https://www.hungbok.com/anime">애니메이션</a>
                             <a>{title}</a>
                         </div>
-                        <div class="content-title">{title}</div>
                     </div>
-                    <div id="slider">
-                        <div class="slider-main"></div>
-                        <div class="slider-nav"></div>
-                        <div class="slider-nav-current"></div>
-                    </div>
-                    <div class="info">
-                        <div class="key-art">
-                            <img {capsule} onerror="showError(this);" loading="lazy">
-                        </div>
-                        <div class="info-table">
-                            <div class="info-tr">
-                                <div class="info-left">
-                                    <p>개발사</p>
-                                </div>
-                                <div class="info-right">
-                                    <p>{developer}</p>
-                                </div>
-                            </div>
-                            <div class="info-tr">
-                                <div class="info-left">
-                                    <p>배급사</p>
-                                </div>
-                                <div class="info-right">
-                                    <p>{publisher}</p>
-                                </div>
-                            </div>
-                            <div class="info-tr">
-                                <div class="info-left">
-                                    <p>플랫폼</p>
-                                </div>
-                                <div class="info-right platform {platform}"></div>
-                            </div>
-                            <div class="info-tr">
-                                <div class="info-left">
-                                    <p>출시일</p>
-                                </div>
-                                <div class="info-right">
-                                    <p>{release}</p>
-                                </div>
-                            </div>
-                            <div class="info-more">
-                                <div class="popup">
-                                    <div class="info-th">
-                                        <p></p>
-                                    </div>
-                                    <div class="popup-content">
-                                        <div class="popup-title">{title} 상세정보</div>
-                                        <div class="more-info">
-                                            <div class="more-info-release">
-                                                <div class="more-info-item-text release">{release_date}</div>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">개발사</p>
-                                                <p class="more-info-item-text">{info_developer}</p>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">배급사</p>
-                                                <p class="more-info-item-text">{info_publisher}</p>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">장르</p>
-                                                <p class="more-info-item-text">{genre}</p>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">기능</p>
-                                                <p class="more-info-item-text">{mode}</p>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">프랜차이즈</p>
-                                                <p class="more-info-item-text">{franchise}</p>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">엔진</p>
-                                                <p class="more-info-item-text">{engine}</p>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">ESD</p>
-                                                <div class="more-info-item-text platform {esd}"></div>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">플랫폼</p>
-                                                <div class="more-info-item-text platform {pc} {console} {mobile}"></div>
-                                            </div>
-                                            <div class="more-info-item">
-                                                <p class="more-info-item-title">심의 등급</p>
-                                                <div class="more-info-item-text age">
-                                                    <div class="icon-age{age}" ttt="Age Rating"></div>
-                                                    <div class="icon-iarc{iarc}" ttt="IARC"></div>
-                                                    <div class="icon-esrb{esrb}" ttt="ESRB"></div>
-                                                    <div class="icon-pegi{pegi}" ttt="PEGI"></div>
-                                                    <div class="icon-usk{usk}" ttt="USK"></div>
-                                                    <div class="icon-rars{rars}" ttt="RARS"></div>
-                                                    <div class="icon-cero{cero}" ttt="CERO"></div>
-                                                    <div class="icon-grac{grac}" ttt="GRAC"></div>
-                                                    <div class="icon-gsrr{gsrr}" ttt="GSRR"></div>
-                                                    <div class="icon-acb{acb}" ttt="ACB"></div>
-                                                    <div class="icon-classind{classind}" ttt="ClassInd"></div>
-                                                    <div class="icon-appstoreage{appstoreage}" ttt="App Store"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <h1 class="top-title">
+                        <img src="/data.hungbok.net/image/anime/{url}/hb_logo.png" onerror="showError(this);" loading="lazy">
+                    </h1>
+                    <div class="contents-top-thumbnail">
+                        <div class="item">
+                            <div class="item-thumbnail">
+                                <a class="thumbnail" href='/data.hungbok.net/image/anime/{url}/hb_thumbnail.jpg' data-lightbox="thumbnail" tabindex="-1">
+                                    <img class='thumbnail-background' src="/data.hungbok.net/image/anime/{url}/hb_thumbnail.jpg" onerror='this.src=`/data.hungbok.net/image/hb/hb_error_vertical.svg`;' loading='lazy'>
+                                </a>
                             </div>
                         </div>
                         <div class="additional-links">
                             <div class="share-open">
                                 <div class="additional-link popup" target="_blank">
-                                    <img src="//media.hungbok.net/image/icon/share.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
+                                    <img src="/data.hungbok.net/image/icon/share.svg" onerror="this.src=`/data.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
                                     <div class="popup-content">
                                         <div class="share-content"></div>
                                     </div>
@@ -191,7 +89,7 @@
                             </div>
                             <div class="report-open">
                                 <div class="additional-link popup" target="_blank">
-                                    <img src="//media.hungbok.net/image/icon/flag.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
+                                    <img src="/data.hungbok.net/image/icon/flag.svg" onerror="this.src=`/data.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
                                     <div class="popup-content">
                                         <div class="report-content"></div>
                                     </div>
@@ -200,326 +98,170 @@
                         </div>
                     </div>
                 </div>
+                <div class="middle-content">
+                    <div id="slider">
+                        <div class="slider"></div>
+                    </div>
+                </div>
                 <div class="bottom-content">
-                    <div class="external-links external-social-link">
-                        <div class="external-link icon-{social_class1}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link1}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{social_class2}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link2}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{social_class3}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link3}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{social_class4}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link4}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{social_class5}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link5}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{social_class6}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link6}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{social_class7}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link7}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{social_class8}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link8}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{social_class9}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link9}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{social_class10}" ttt="SNS">
-                            <a class="external-link-button" href="{social_link10}" target="_blank"></a>
+                    <div class="external-links {social}"></div>
+                    <div class="more-info">
+                        <div class="info-table">
+                            <div class="info-th">
+                                <p>{title} </p>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>원제</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>원작</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>감독</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>시리즈 구성</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>각본</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>캐릭터 디자인</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>음악</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>애니메이션 제작</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>제작</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>방송국</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>방영 기간</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>편당 러닝타임</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>화수</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>제작 국가</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>원어</p>
+                                </div>
+                                <div class="info-right">
+                                    <p>{}</p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
+                                    <p>등급</p>
+                                </div>
+                                <div class="info-right age">
+                                    <div class="icon-age{age}" ttt="Age Rating"></div>
+                                    <div class="icon-iarc{iarc}" ttt="IARC"></div>
+                                    <div class="icon-esrb{esrb}" ttt="ESRB"></div>
+                                    <div class="icon-pegi{pegi}" ttt="PEGI"></div>
+                                    <div class="icon-usk{usk}" ttt="USK"></div>
+                                    <div class="icon-rars{rars}" ttt="RARS"></div>
+                                    <div class="icon-cero{cero}" ttt="CERO"></div>
+                                    <div class="icon-grac{grac}" ttt="GRAC"></div>
+                                    <div class="icon-gsrr{gsrr}" ttt="GSRR"></div>
+                                    <div class="icon-acb{acb}" ttt="ACB"></div>
+                                    <div class="icon-classind{classind}" ttt="ClassInd"></div>
+                                    <div class="icon-appstoreage{appstoreage}" ttt="App Store"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="descriptions">
                         <div class="description">
                             <div class="description-attention {attention}"></div>
                             <p class="description-plot">{plot}</p>
-                            <div class="description-content">{description}</div>
+                            {ptext}
                             <P class="description-source">{source}</P>
                             <P class="description-update">{update}</P>
                         </div>
                         <div class="show-more"></div>
                     </div>
-                    <div class="review {review}">
-                        <div class="more-info-reviews">
-                            <p class="section-info-item-title">평가</p>
-                            <div class="more-info-item-text reviews">
-                                <div class="metacritic-reviews {metacritic}">
-                                    <div class="metacritic-title">
-                                        <img src="//media.hungbok.net/image/logo/metacritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    </div>
-                                    <div class="metacritic"><div {metacritic_class1}></div>{metacritic1}</div>
-                                    <div class="metacritic"><div {metacritic_class2}></div>{metacritic2}</div>
-                                    <div class="metacritic"><div {metacritic_class3}></div>{metacritic3}</div>
-                                    <div class="metacritic"><div {metacritic_class4}></div>{metacritic4}</div>
-                                    <div class="metacritic"><div {metacritic_class5}></div>{metacritic5}</div>
-                                    <div class="metacritic"><div {metacritic_class6}></div>{metacritic6}</div>
-                                    <div class="metacritic"><div {metacritic_class7}></div>{metacritic7}</div>
-                                    <div class="metacritic"><div {metacritic_class8}></div>{metacritic8}</div>
-                                    <div class="metacritic"><div {metacritic_class9}></div>{metacritic9}</div>
-                                    <div class="metacritic"><div {metacritic_class10}></div>{metacritic10}</div>
-                                    <div class="metacritic"><div {metacritic_class11}></div>{metacritic11}</div>
-                                    <div class="metacritic"><div {metacritic_class12}></div>{metacritic12}</div>
-                                </div>
-                                <div class="opencritic {opencritic}">
-                                    <div class="opencritic-title">
-                                        <img src="//media.hungbok.net/image/logo/opencritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    </div>
-                                    <div class="opencritic-reviews">
-                                        <div class="opencritic-rating" ttt="OpenCritic Rating">
-                                            <img src="//media.hungbok.net/image/icon/{opencritic_rating}.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;">
-                                        </div>
-                                        <div class="top-critic-average {opencritic_rating} top-critic-average-{top_critic_average}" ttt="Top Critic Average">
-                                            <div class="score-orb" style="width: 50px; height: 50px;">
-                                                <div class="outer-orb"></div>
-                                                <svg viewBox="0 0 32 32">
-                                                    <circle r="16" cx="16" cy="16" class="top-critic-average-circle"></circle>
-                                                </svg>
-                                                <div class="inner-orb"><p>{top_critic_average}</p></div>
-                                            </div>
-                                        </div>
-                                        <div class="critics-recommend {opencritic_rating} critics-recommend-{critics_recommend}" ttt="Critics Recommend">
-                                            <div class="score-orb" style="width: 50px; height: 50px;">
-                                                <div class="outer-orb"></div>
-                                                <svg viewBox="0 0 32 32">
-                                                    <defs>
-                                                        <linearGradient id="critics-recommend-gradient">
-                                                            <stop offset="0" class="critics-recommend-start"></stop>
-                                                            <stop offset="22%" class="critics-recommend-start"></stop>
-                                                            <stop offset="78%" class="critics-recommend-stop"></stop>
-                                                            <stop offset="100%" class="critics-recommend-stop"></stop>
-                                                        </linearGradient>
-                                                    </defs>
-                                                    <circle r="16" cx="16" cy="16" fill="url(#critics-recommend-gradient)" class="critics-recommend-circle"></circle>
-                                                </svg>
-                                                <div class="inner-orb"><p>{critics_recommend}</p></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="more-info-release {system_requirements_tab1}">
-                        <p class="section-info-item-title">시스템 요구 사항</p>
-                        <div class="more-info-tabs">
-                            <div class="more-info-tab {system_requirements_tab1}" onclick="changeTab(event, 0)">윈도우</div>
-                            <div class="more-info-tab {system_requirements_tab2}" onclick="changeTab(event, 1)">맥</div>
-                            <div class="more-info-tab {system_requirements_tab3}" onclick="changeTab(event, 2)">리눅스</div>
-                        </div>
-                        <div class="more-info-tab-content" id="tab-content-0">
-                            <div class="system-requirements">
-                                <div class="system-requirements-title">최소</div>
-                                <div>
-                                    <p>운영체제</p><p>{minimum_os}</p>
-                                </div>
-                                <div>
-                                    <p>프로세서</p>{minimum_processor}<p></p>
-                                </div>
-                                <div>
-                                    <p>메모리</p><p>{minimum_memory}</p>
-                                </div>
-                                <div>
-                                    <p>그래픽카드</p><p>{minimum_graphics}</p>
-                                </div>
-                                <div>
-                                    <p>저장공간</p><p>{minimum_storage}</p>
-                                </div>
-                                <div>
-                                    <p>기타</p><p>{minimum_other}</p>
-                                </div>
-                            </div>
-                            <div class="system-requirements">
-                                <div class="system-requirements-title">권장</div>
-                                <div>
-                                    <p>운영체제</p><p>{recommended_os}</p>
-                                </div>
-                                <div>
-                                    <p>프로세서</p>{recommended_processor}<p></p>
-                                </div>
-                                <div>
-                                    <p>메모리</p><p>{recommended_memory}</p>
-                                </div>
-                                <div>
-                                    <p>그래픽카드</p><p>{recommended_graphics}</p>
-                                </div>
-                                <div>
-                                    <p>저장공간</p><p>{recommended_storage}</p>
-                                </div>
-                                <div>
-                                    <p>기타</p><p>{recommended_other}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="more-info-tab-content" id="tab-content-1">
-                            <div class="system-requirements">
-                                <div class="system-requirements-title">최소</div>
-                                <div>
-                                    <p>운영체제</p><p>{minimum_os2}</p>
-                                </div>
-                                <div>
-                                    <p>프로세서</p>{minimum_processor2}<p></p>
-                                </div>
-                                <div>
-                                    <p>메모리</p><p>{minimum_memory2}</p>
-                                </div>
-                                <div>
-                                    <p>그래픽카드</p><p>{minimum_graphics2}</p>
-                                </div>
-                                <div>
-                                    <p>저장공간</p><p>{minimum_storage2}</p>
-                                </div>
-                                <div>
-                                    <p>기타</p><p>{minimum_other2}</p>
-                                </div>
-                            </div>
-                            <div class="system-requirements">
-                                <div class="system-requirements-title">권장</div>
-                                <div>
-                                    <p>운영체제</p><p>{recommended_os2}</p>
-                                </div>
-                                <div>
-                                    <p>프로세서</p>{recommended_processor2}<p></p>
-                                </div>
-                                <div>
-                                    <p>메모리</p><p>{recommended_memory2}</p>
-                                </div>
-                                <div>
-                                    <p>그래픽카드</p><p>{recommended_graphics2}</p>
-                                </div>
-                                <div>
-                                    <p>저장공간</p><p>{recommended_storage2}</p>
-                                </div>
-                                <div>
-                                    <p>기타</p><p>{recommended_other2}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="more-info-tab-content" id="tab-content-2">
-                            <div class="system-requirements">
-                                <div class="system-requirements-title">최소</div>
-                                <div>
-                                    <p>운영체제</p><p>{minimum_os3}</p>
-                                </div>
-                                <div>
-                                    <p>프로세서</p>{minimum_processor3}<p></p>
-                                </div>
-                                <div>
-                                    <p>메모리</p><p>{minimum_memory3}</p>
-                                </div>
-                                <div>
-                                    <p>그래픽카드</p><p>{minimum_graphics3}</p>
-                                </div>
-                                <div>
-                                    <p>저장공간</p><p>{minimum_storage3}</p>
-                                </div>
-                                <div>
-                                    <p>기타</p><p>{minimum_other3}</p>
-                                </div>
-                            </div>
-                            <div class="system-requirements">
-                                <div class="system-requirements-title">권장</div>
-                                <div>
-                                    <p>운영체제</p><p>{recommended_os3}</p>
-                                </div>
-                                <div>
-                                    <p>프로세서</p>{recommended_processor3}<p></p>
-                                </div>
-                                <div>
-                                    <p>메모리</p><p>{recommended_memory3}</p>
-                                </div>
-                                <div>
-                                    <p>그래픽카드</p><p>{recommended_graphics3}</p>
-                                </div>
-                                <div>
-                                    <p>저장공간</p><p>{recommended_storage3}</p>
-                                </div>
-                                <div>
-                                    <p>기타</p><p>{recommended_other3}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="more-info-language {language}">
-                        <p class="section-info-item-title">지원 언어</p>
-                        <div class="more-info-item-text info-language-popup">
-                            <p>언어</p><div><p>음성</p><p>자막</p></div>
-                        </div>
-                        <div class="more-info-item-text info-language-popup">
-                            <p>언어</p><div><p>음성</p><p>자막</p></div>
-                        </div>
-                        <div class="more-info-item-text info-language-popup {language_supported}">
-                            <p class="language-en"></p><div><p class="en_audio"></p><p class="en_text"></p></div>
-                            <p class="language-ar"></p><div><p class="ar_audio"></p><p class="ar_text"></p></div>
-                            <p class="language-bg"></p><div><p class="bg_audio"></p><p class="bg_text"></p></div>
-                            <p class="language-cs"></p><div><p class="cs_audio"></p><p class="cs_text"></p></div>
-                            <p class="language-da"></p><div><p class="da_audio"></p><p class="da_text"></p></div>
-                            <p class="language-de"></p><div><p class="de_audio"></p><p class="de_text"></p></div>
-                            <p class="language-el"></p><div><p class="el_audio"></p><p class="el_text"></p></div>
-                            <p class="language-es"></p><div><p class="es_audio"></p><p class="es_text"></p></div>
-                            <p class="language-es-mx"></p><div><p class="es_mx_audio"></p><p class="es_mx_text"></p></div>
-                            <p class="language-fi"></p><div><p class="fi_audio"></p><p class="fi_text"></p></div>
-                            <p class="language-fr"></p><div><p class="fr_audio"></p><p class="fr_text"></p></div>
-                            <p class="language-hi"></p><div><p class="hi_audio"></p><p class="hi_text"></p></div>
-                            <p class="language-hu"></p><div><p class="hu_audio"></p><p class="hu_text"></p></div>
-                            <p class="language-id"></p><div><p class="id_audio"></p><p class="id_text"></p></div>
-                            <p class="language-it"></p><div><p class="it_audio"></p><p class="it_text"></p></div>
-                            <p class="language-ja"></p><div><p class="ja_audio"></p><p class="ja_text"></p></div>
-                        </div>
-                        <div class="more-info-item-text info-language-popup {language_supported}">
-                            <p class="language-ko"></p><div><p class="ko_audio"></p><p class="ko_text"></p></div>
-                            <p class="language-ms"></p><div><p class="ms_audio"></p><p class="ms_text"></p></div>
-                            <p class="language-nl"></p><div><p class="nl_audio"></p><p class="nl_text"></p></div>
-                            <p class="language-no"></p><div><p class="no_audio"></p><p class="no_text"></p></div>
-                            <p class="language-pl"></p><div><p class="pl_audio"></p><p class="pl_text"></p></div>
-                            <p class="language-pt"></p><div><p class="pt_audio"></p><p class="pt_text"></p></div>
-                            <p class="language-pt-br"></p><div><p class="pt_br_audio"></p><p class="pt_br_text"></p></div>
-                            <p class="language-ro"></p><div><p class="ro_audio"></p><p class="ro_text"></p></div>
-                            <p class="language-ru"></p><div><p class="ru_audio"></p><p class="ru_text"></p></div>
-                            <p class="language-sv"></p><div><p class="sv_audio"></p><p class="sv_text"></p></div>
-                            <p class="language-th"></p><div><p class="th_audio"></p><p class="th_text"></p></div>
-                            <p class="language-tr"></p><div><p class="tr_audio"></p><p class="tr_text"></p></div>
-                            <p class="language-uk"></p><div><p class="uk_audio"></p><p class="uk_text"></p></div>
-                            <p class="language-vi"></p><div><p class="vi_audio"></p><p class="vi_text"></p></div>
-                            <p class="language-zh-cn"></p><div><p class="zh_cn_audio"></p><p class="zh_cn_text"></p></div>
-                            <p class="language-zh-tw"></p><div><p class="zh_tw_audio"></p><p class="zh_tw_text"></p></div>
-                        </div>
-                    </div>
-                    <div class="external-links external-store-link">
-                        <div class="external-link icon-{store_class1}" ttt="Store">
-                            <a class="external-link-button" href="{store_link1}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class2}" ttt="Store">
-                            <a class="external-link-button" href="{store_link2}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class3}" ttt="Store">
-                            <a class="external-link-button" href="{store_link3}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class4}" ttt="Store">
-                            <a class="external-link-button" href="{store_link4}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class5}" ttt="Store">
-                            <a class="external-link-button" href="{store_link5}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class6}" ttt="Store">
-                            <a class="external-link-button" href="{store_link6}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class7}" ttt="Store">
-                            <a class="external-link-button" href="{store_link7}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class8}" ttt="Store">
-                            <a class="external-link-button" href="{store_link8}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class9}" ttt="Store">
-                            <a class="external-link-button" href="{store_link9}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class10}" ttt="Store">
-                            <a class="external-link-button" href="{store_link10}" target="_blank"></a>
-                        </div>
-                    </div>
+                    <div class="external-links {store}"></div>
                     <div class="franchise-template">
                         <div franchise-loader={franchise1}></div>
                         <div franchise-loader={franchise2}></div>
@@ -533,7 +275,7 @@
         <div id="message-container"></div>
         <div id="top-button" onclick="topButton()">▲</div>
         <footer></footer>
-        <script type="text/javascript" src="//www.hungbok.net/javascript/ko/games.js"></script>
+        <script type="text/javascript" src="//www.hungbok.net/javascript/anime.js"></script>
         <script data-cfasync="false" type="text/javascript" src="//www.hungbok.net/javascript/form-submission-handler.js"></script>
         <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
     </body>
