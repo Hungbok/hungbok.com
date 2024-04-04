@@ -59,12 +59,17 @@
                 <p>나이를 확인해주세요</p>
                 <div class="age-check-container">
                     <input id="age-check-year" type="text" maxlength="4" placeholder="YYYY" onblur="completeYear(this)" oninput="moveFocusToNextInput(this, 4)"/>
-                    <input id="age-check-month" type="text" maxlength="2" placeholder="MM" onblur="completeMonthDay(this)" oninput="moveFocusToNextInput(this, 2)"/>
-                    <input id="age-check-day" type="text" maxlength="2" placeholder="DD" onblur="completeMonthDay(this)" oninput="moveFocusToNextInput(this, 999)"/>
-                    <button id="age-back">돌아가기</button>
+                    <input id="age-check-month" type="text" maxlength="2" placeholder="MM" onblur="completeMonth(this)" oninput="moveFocusToNextInput(this, 2)"/>
+                    <input id="age-check-day" type="text" maxlength="2" placeholder="DD" onblur="completeDay(this)" oninput="moveFocusToNextInput(this, 999)"/>
                     <button id="age-checking" disabled>확인</button>
-                    <input type="text">
+                    <input id="age-check-none" type="text">
                 </div>
+                <a class="age-check-back" onclick="window.history.back()">
+                    <p>Previous page</p>
+                </a>
+                <a class="age-check-home" href="https://www.hungbok.com">
+                    <p>Home</p>
+                </a>
             </div>
             <div class="top-backgrounds">
                 <div class="top-background" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
