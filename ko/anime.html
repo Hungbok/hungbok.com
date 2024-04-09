@@ -57,14 +57,46 @@
         <main>
             <div class="top-backgrounds">
                 <div class="top-background" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
-                <div class="top-background-mirror" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
-                <div class="top-background-shadow" style="background-image: url(//media.hungbok.net/image/games/{url}/hb_background.jpg);"></div>
             </div>
             <section class="section">
                 <div class="top-content">
+                    <div class="content-name">
+                        <div class="content-path">
+                            <a href="https://www.hungbok.com">메인</a>
+                            <a href="https://www.hungbok.com/anime">애니메이션</a>
+                            <a>{title}</a>
+                        </div>
+                    </div>
                     <h1 class="top-title">
                         <img {logo} onerror="showError(this);" loading="lazy">
                     </h1>
+                    <div class="contents-top-thumbnail">
+                        <div class="item">
+                            <div class="item-thumbnail">
+                                <a class="thumbnail" href='//media.hungbok.net/image/anime/{url}/hb_thumbnail.jpg' data-lightbox="thumbnail" tabindex="-1">
+                                    <img class='thumbnail-background' src="//media.hungbok.net/image/anime/{url}/hb_thumbnail.jpg" onerror='this.src=`//media.hungbok.net/image/hb/hb_error_vertical.svg`;' loading='lazy'>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="additional-links">
+                            <div class="share-open">
+                                <div class="additional-link popup" target="_blank">
+                                    <img src="//media.hungbok.net/image/icon/share.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
+                                    <div class="popup-content">
+                                        <div class="share-content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="report-open">
+                                <div class="additional-link popup" target="_blank">
+                                    <img src="//media.hungbok.net/image/icon/flag.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
+                                    <div class="popup-content">
+                                        <div class="report-content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="slider-middle-content">
                     <div id="slider">
@@ -73,11 +105,6 @@
                 </div>
                 <div class="middle-content">
                     <div class="content-name">
-                        <div class="content-path">
-                            <a href="https://www.hungbok.com">메인</a>
-                            <a href="https://www.hungbok.com/games">게임</a>
-                            <a>{title}</a>
-                        </div>
                         <div class="content-title">{title}</div>
                     </div>
                     <div class="info">
@@ -176,24 +203,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="additional-links">
-                            <div class="share-open">
-                                <div class="additional-link popup" target="_blank">
-                                    <img src="//media.hungbok.net/image/icon/share.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    <div class="popup-content">
-                                        <div class="share-content"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="report-open">
-                                <div class="additional-link popup" target="_blank">
-                                    <img src="//media.hungbok.net/image/icon/flag.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    <div class="popup-content">
-                                        <div class="report-content"></div>
                                     </div>
                                 </div>
                             </div>
