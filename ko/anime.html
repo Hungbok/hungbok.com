@@ -250,8 +250,8 @@
                                                 <p class="more-info-item-text">{}</p>
                                             </div>
                                             <div class="more-info-item">
-                                                <p class="more-info-item-title">상태</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-title">프렌차이즈</p>
+                                                <p class="more-info-item-text">{franchise}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">장르</p>
@@ -263,7 +263,7 @@
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">감독</p>
-                                                <p class="more-info-item-text">{franchise}</p>
+                                                <p class="more-info-item-text">{}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">시리즈 구성</p>
@@ -388,63 +388,15 @@
                             <a class="external-link-button" href="{social_link10}" target="_blank"></a>
                         </div>
                     </div>
-                    <div class="review {review}">
+                    <div class="story"></div>
+                    <div class="setting"></div>
+                    <div class="character"></div>
+                    <div class="music"></div>
+                    <div class="review {}">
                         <div class="more-info-reviews">
                             <p class="section-info-item-title">평가</p>
                             <div class="more-info-item-text reviews">
-                                <div class="metacritic-reviews {metacritic}">
-                                    <div class="metacritic-title">
-                                        <img src="//media.hungbok.net/image/logo/metacritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    </div>
-                                    <div class="metacritic"><div {metacritic_class1}></div>{metacritic1}</div>
-                                    <div class="metacritic"><div {metacritic_class2}></div>{metacritic2}</div>
-                                    <div class="metacritic"><div {metacritic_class3}></div>{metacritic3}</div>
-                                    <div class="metacritic"><div {metacritic_class4}></div>{metacritic4}</div>
-                                    <div class="metacritic"><div {metacritic_class5}></div>{metacritic5}</div>
-                                    <div class="metacritic"><div {metacritic_class6}></div>{metacritic6}</div>
-                                    <div class="metacritic"><div {metacritic_class7}></div>{metacritic7}</div>
-                                    <div class="metacritic"><div {metacritic_class8}></div>{metacritic8}</div>
-                                    <div class="metacritic"><div {metacritic_class9}></div>{metacritic9}</div>
-                                    <div class="metacritic"><div {metacritic_class10}></div>{metacritic10}</div>
-                                    <div class="metacritic"><div {metacritic_class11}></div>{metacritic11}</div>
-                                    <div class="metacritic"><div {metacritic_class12}></div>{metacritic12}</div>
-                                </div>
-                                <div class="opencritic {opencritic}">
-                                    <div class="opencritic-title">
-                                        <img src="//media.hungbok.net/image/logo/opencritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    </div>
-                                    <div class="opencritic-reviews">
-                                        <div class="opencritic-rating" ttt="OpenCritic Rating">
-                                            <img src="//media.hungbok.net/image/icon/{opencritic_rating}.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;">
-                                        </div>
-                                        <div class="top-critic-average {opencritic_rating} top-critic-average-{top_critic_average}" ttt="Top Critic Average">
-                                            <div class="score-orb" style="width: 50px; height: 50px;">
-                                                <div class="outer-orb"></div>
-                                                <svg viewBox="0 0 32 32">
-                                                    <circle r="16" cx="16" cy="16" class="top-critic-average-circle"></circle>
-                                                </svg>
-                                                <div class="inner-orb"><p>{top_critic_average}</p></div>
-                                            </div>
-                                        </div>
-                                        <div class="critics-recommend {opencritic_rating} critics-recommend-{critics_recommend}" ttt="Critics Recommend">
-                                            <div class="score-orb" style="width: 50px; height: 50px;">
-                                                <div class="outer-orb"></div>
-                                                <svg viewBox="0 0 32 32">
-                                                    <defs>
-                                                        <linearGradient id="critics-recommend-gradient">
-                                                            <stop offset="0" class="critics-recommend-start"></stop>
-                                                            <stop offset="22%" class="critics-recommend-start"></stop>
-                                                            <stop offset="78%" class="critics-recommend-stop"></stop>
-                                                            <stop offset="100%" class="critics-recommend-stop"></stop>
-                                                        </linearGradient>
-                                                    </defs>
-                                                    <circle r="16" cx="16" cy="16" fill="url(#critics-recommend-gradient)" class="critics-recommend-circle"></circle>
-                                                </svg>
-                                                <div class="inner-orb"><p>{critics_recommend}</p></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="rating {type} {rating}"></div>
                             </div>
                         </div>
                     </div>
@@ -588,49 +540,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="more-info-language {language}">
-                        <p class="section-info-item-title">지원 언어</p>
-                        <div class="more-info-item-text info-language-popup">
-                            <p>언어</p><div><p>음성</p><p>자막</p></div>
-                        </div>
-                        <div class="more-info-item-text info-language-popup">
-                            <p>언어</p><div><p>음성</p><p>자막</p></div>
-                        </div>
-                        <div class="more-info-item-text info-language-popup {language_supported}">
-                            <p class="language-en"></p><div><p class="en_audio"></p><p class="en_text"></p></div>
-                            <p class="language-ar"></p><div><p class="ar_audio"></p><p class="ar_text"></p></div>
-                            <p class="language-bg"></p><div><p class="bg_audio"></p><p class="bg_text"></p></div>
-                            <p class="language-cs"></p><div><p class="cs_audio"></p><p class="cs_text"></p></div>
-                            <p class="language-da"></p><div><p class="da_audio"></p><p class="da_text"></p></div>
-                            <p class="language-de"></p><div><p class="de_audio"></p><p class="de_text"></p></div>
-                            <p class="language-el"></p><div><p class="el_audio"></p><p class="el_text"></p></div>
-                            <p class="language-es"></p><div><p class="es_audio"></p><p class="es_text"></p></div>
-                            <p class="language-es-mx"></p><div><p class="es_mx_audio"></p><p class="es_mx_text"></p></div>
-                            <p class="language-fi"></p><div><p class="fi_audio"></p><p class="fi_text"></p></div>
-                            <p class="language-fr"></p><div><p class="fr_audio"></p><p class="fr_text"></p></div>
-                            <p class="language-hi"></p><div><p class="hi_audio"></p><p class="hi_text"></p></div>
-                            <p class="language-hu"></p><div><p class="hu_audio"></p><p class="hu_text"></p></div>
-                            <p class="language-id"></p><div><p class="id_audio"></p><p class="id_text"></p></div>
-                            <p class="language-it"></p><div><p class="it_audio"></p><p class="it_text"></p></div>
-                            <p class="language-ja"></p><div><p class="ja_audio"></p><p class="ja_text"></p></div>
-                        </div>
-                        <div class="more-info-item-text info-language-popup {language_supported}">
-                            <p class="language-ko"></p><div><p class="ko_audio"></p><p class="ko_text"></p></div>
-                            <p class="language-ms"></p><div><p class="ms_audio"></p><p class="ms_text"></p></div>
-                            <p class="language-nl"></p><div><p class="nl_audio"></p><p class="nl_text"></p></div>
-                            <p class="language-no"></p><div><p class="no_audio"></p><p class="no_text"></p></div>
-                            <p class="language-pl"></p><div><p class="pl_audio"></p><p class="pl_text"></p></div>
-                            <p class="language-pt"></p><div><p class="pt_audio"></p><p class="pt_text"></p></div>
-                            <p class="language-pt-br"></p><div><p class="pt_br_audio"></p><p class="pt_br_text"></p></div>
-                            <p class="language-ro"></p><div><p class="ro_audio"></p><p class="ro_text"></p></div>
-                            <p class="language-ru"></p><div><p class="ru_audio"></p><p class="ru_text"></p></div>
-                            <p class="language-sv"></p><div><p class="sv_audio"></p><p class="sv_text"></p></div>
-                            <p class="language-th"></p><div><p class="th_audio"></p><p class="th_text"></p></div>
-                            <p class="language-tr"></p><div><p class="tr_audio"></p><p class="tr_text"></p></div>
-                            <p class="language-uk"></p><div><p class="uk_audio"></p><p class="uk_text"></p></div>
-                            <p class="language-vi"></p><div><p class="vi_audio"></p><p class="vi_text"></p></div>
-                            <p class="language-zh-cn"></p><div><p class="zh_cn_audio"></p><p class="zh_cn_text"></p></div>
-                            <p class="language-zh-tw"></p><div><p class="zh_tw_audio"></p><p class="zh_tw_text"></p></div>
+                    <div class="more-info-language {}">
+                        <p class="section-info-item-title">에피소드</p>
+                        <div class="episode">
+                            <div class="episode-tables">
+                                <table class="episode-table">
+                                    <thead>
+                                        <tr>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                            <th>6</th>
+                                            <th>7</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <table class="episode-table" id="table-multi-hover">
+                                    <tbody></tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <div class="franchise-template">
