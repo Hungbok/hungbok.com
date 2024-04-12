@@ -260,61 +260,7 @@
                     <div class="review {review}">
                         <div class="more-info-reviews">
                             <p class="section-info-item-title">평가</p>
-                            <div class="more-info-item-text reviews">
-                                <div class="metacritic-reviews {metacritic}">
-                                    <div class="metacritic-title">
-                                        <img src="//media.hungbok.net/image/logo/metacritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    </div>
-                                    <div class="metacritic"><div {metacritic_class1}></div>{metacritic1}</div>
-                                    <div class="metacritic"><div {metacritic_class2}></div>{metacritic2}</div>
-                                    <div class="metacritic"><div {metacritic_class3}></div>{metacritic3}</div>
-                                    <div class="metacritic"><div {metacritic_class4}></div>{metacritic4}</div>
-                                    <div class="metacritic"><div {metacritic_class5}></div>{metacritic5}</div>
-                                    <div class="metacritic"><div {metacritic_class6}></div>{metacritic6}</div>
-                                    <div class="metacritic"><div {metacritic_class7}></div>{metacritic7}</div>
-                                    <div class="metacritic"><div {metacritic_class8}></div>{metacritic8}</div>
-                                    <div class="metacritic"><div {metacritic_class9}></div>{metacritic9}</div>
-                                    <div class="metacritic"><div {metacritic_class10}></div>{metacritic10}</div>
-                                    <div class="metacritic"><div {metacritic_class11}></div>{metacritic11}</div>
-                                    <div class="metacritic"><div {metacritic_class12}></div>{metacritic12}</div>
-                                </div>
-                                <div class="opencritic {opencritic}">
-                                    <div class="opencritic-title">
-                                        <img src="//media.hungbok.net/image/logo/opencritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    </div>
-                                    <div class="opencritic-reviews">
-                                        <div class="opencritic-rating" ttt="OpenCritic Rating">
-                                            <img src="//media.hungbok.net/image/icon/{opencritic_rating}.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;">
-                                        </div>
-                                        <div class="top-critic-average {opencritic_rating} top-critic-average-{top_critic_average}" ttt="Top Critic Average">
-                                            <div class="score-orb" style="width: 50px; height: 50px;">
-                                                <div class="outer-orb"></div>
-                                                <svg viewBox="0 0 32 32">
-                                                    <circle r="16" cx="16" cy="16" class="top-critic-average-circle"></circle>
-                                                </svg>
-                                                <div class="inner-orb"><p>{top_critic_average}</p></div>
-                                            </div>
-                                        </div>
-                                        <div class="critics-recommend {opencritic_rating} critics-recommend-{critics_recommend}" ttt="Critics Recommend">
-                                            <div class="score-orb" style="width: 50px; height: 50px;">
-                                                <div class="outer-orb"></div>
-                                                <svg viewBox="0 0 32 32">
-                                                    <defs>
-                                                        <linearGradient id="critics-recommend-gradient">
-                                                            <stop offset="0" class="critics-recommend-start"></stop>
-                                                            <stop offset="22%" class="critics-recommend-start"></stop>
-                                                            <stop offset="78%" class="critics-recommend-stop"></stop>
-                                                            <stop offset="100%" class="critics-recommend-stop"></stop>
-                                                        </linearGradient>
-                                                    </defs>
-                                                    <circle r="16" cx="16" cy="16" fill="url(#critics-recommend-gradient)" class="critics-recommend-circle"></circle>
-                                                </svg>
-                                                <div class="inner-orb"><p>{critics_recommend}</p></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="more-info-item-text reviews rating {rating}"></div>
                         </div>
                     </div>
                     <div class="more-info-release {system_requirements_tab1}">
