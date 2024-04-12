@@ -146,7 +146,7 @@
                                     <p>원제</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{original_title}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -154,7 +154,7 @@
                                     <p>원작</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{original}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -162,7 +162,7 @@
                                     <p>감독</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{director}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -170,7 +170,7 @@
                                     <p>각본</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{writer}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -178,7 +178,7 @@
                                     <p>캐릭터 디자인</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{character_design}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -186,7 +186,7 @@
                                     <p>음악</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{music_producer}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -194,7 +194,7 @@
                                     <p>애니메이션 제작</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{animation_production}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -202,7 +202,7 @@
                                     <p>제작</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{production}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -210,7 +210,7 @@
                                     <p>방영 기간</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{start_year} {start_month} {start_day} ~ {end_year} {end_month} {end_day}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -218,7 +218,7 @@
                                     <p>편당 러닝타임</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{runningtime}</p>
                                 </div>
                             </div>
                             <div class="info-tr">
@@ -226,7 +226,7 @@
                                     <p>화수</p>
                                 </div>
                                 <div class="info-right">
-                                    <p>{}</p>
+                                    <p>{total_episode}</p>
                                 </div>
                             </div>
                             <div class="info-more">
@@ -235,19 +235,19 @@
                                         <p></p>
                                     </div>
                                     <div class="popup-content">
-                                        <div class="popup-subtitle" ttt="{}">{subtitle}</div>
+                                        <div class="popup-subtitle" ttt="{}">{original_title}</div>
                                         <div class="popup-title">{title}</div>
                                         <div class="more-info">
                                             <div class="more-info-release">
-                                                <div class="more-info-item-text release">{release_date}</div>
+                                                <div class="more-info-item-text release"></div>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">원작</p>
-                                                <p class="more-info-item-text">{info_publisher}</p>
+                                                <p class="more-info-item-text">{original}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">분류</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{content_type}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">프렌차이즈</p>
@@ -259,67 +259,67 @@
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">총 감독</p>
-                                                <p class="more-info-item-text">{mode}</p>
+                                                <p class="more-info-item-text">{general_director}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">감독</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{director}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">시리즈 구성</p>
-                                                <p class="more-info-item-text">{engine}</p>
+                                                <p class="more-info-item-text">{screenplay}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">각본</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{writer}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">캐릭터 디자인</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{character_design}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">출연</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{performer}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">음악</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{music_producer}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">프로듀서</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{producer}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">애니메이션 제작</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{animation_production}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">제작</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{production}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">방송국</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{broadcast}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">방영 기간</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{start_year} {start_month} {start_day} ~ {end_year} {end_month} {end_day}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">편당 러닝타임</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{runningtime}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">화수</p>
-                                                <p class="more-info-item-text">{}</p>
+                                                <p class="more-info-item-text">{total_episode}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">제작 국가</p>
-                                                <div class="more-info-item-text platform {esd}"></div>
+                                                <div class="more-info-item-text platform {country}"></div>
                                             </div>
                                             <div class="more-info-item">
-                                                <p class="more-info-item-title">원어</p>
-                                                <div class="more-info-item-text platform {pc} {console} {mobile}"></div>
+                                                <p class="more-info-item-title">언어</p>
+                                                <div class="more-info-item-text platform {language}"></div>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">시청 등급</p>
