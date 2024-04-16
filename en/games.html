@@ -84,7 +84,7 @@
                     <div class="content-name">
                         <div class="content-path">
                             <a href="https://www.hungbok.com">Home</a>
-                            <a href="https://www.hungbok.com/games">Games</a>
+                            <a href="https://www.hungbok.com/en/games">Games</a>
                             <a>{title}</a>
                         </div>
                         <div class="content-title">{title}</div>
@@ -257,72 +257,46 @@
                         </div>
                         <div class="show-more"></div>
                     </div>
-                    <div class="review {review}">
-                        <div class="more-info-reviews">
-                            <p class="section-info-item-title">Reviews</p>
-                            <div class="more-info-item-text reviews">
-                                <div class="metacritic-reviews {metacritic}">
-                                    <div class="metacritic-title">
-                                        <img src="//media.hungbok.net/image/logo/metacritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    </div>
-                                    <div class="metacritic"><div {metacritic_class1}></div>{metacritic1}</div>
-                                    <div class="metacritic"><div {metacritic_class2}></div>{metacritic2}</div>
-                                    <div class="metacritic"><div {metacritic_class3}></div>{metacritic3}</div>
-                                    <div class="metacritic"><div {metacritic_class4}></div>{metacritic4}</div>
-                                    <div class="metacritic"><div {metacritic_class5}></div>{metacritic5}</div>
-                                    <div class="metacritic"><div {metacritic_class6}></div>{metacritic6}</div>
-                                    <div class="metacritic"><div {metacritic_class7}></div>{metacritic7}</div>
-                                    <div class="metacritic"><div {metacritic_class8}></div>{metacritic8}</div>
-                                    <div class="metacritic"><div {metacritic_class9}></div>{metacritic9}</div>
-                                    <div class="metacritic"><div {metacritic_class10}></div>{metacritic10}</div>
-                                    <div class="metacritic"><div {metacritic_class11}></div>{metacritic11}</div>
-                                    <div class="metacritic"><div {metacritic_class12}></div>{metacritic12}</div>
-                                </div>
-                                <div class="opencritic {opencritic}">
-                                    <div class="opencritic-title">
-                                        <img src="//media.hungbok.net/image/logo/opencritic.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                    </div>
-                                    <div class="opencritic-reviews">
-                                        <div class="opencritic-rating" ttt="OpenCritic Rating">
-                                            <img src="//media.hungbok.net/image/icon/{opencritic_rating}.svg" onerror="this.src=`//media.hungbok.net/image/icon/exclamation.svg`;" loading="lazy">
-                                        </div>
-                                        <div class="top-critic-average {opencritic_rating} top-critic-average-{top_critic_average}" ttt="Top Critic Average">
-                                            <div class="score-orb" style="width: 50px; height: 50px;">
-                                                <div class="outer-orb"></div>
-                                                <svg viewBox="0 0 32 32">
-                                                    <circle r="16" cx="16" cy="16" class="top-critic-average-circle"></circle>
-                                                </svg>
-                                                <div class="inner-orb"><p>{top_critic_average}</p></div>
-                                            </div>
-                                        </div>
-                                        <div class="critics-recommend {opencritic_rating} critics-recommend-{critics_recommend}" ttt="Critics Recommend">
-                                            <div class="score-orb" style="width: 50px; height: 50px;">
-                                                <div class="outer-orb"></div>
-                                                <svg viewBox="0 0 32 32">
-                                                    <defs>
-                                                        <linearGradient id="critics-recommend-gradient">
-                                                            <stop offset="0" class="critics-recommend-start"></stop>
-                                                            <stop offset="22%" class="critics-recommend-start"></stop>
-                                                            <stop offset="78%" class="critics-recommend-stop"></stop>
-                                                            <stop offset="100%" class="critics-recommend-stop"></stop>
-                                                        </linearGradient>
-                                                    </defs>
-                                                    <circle r="16" cx="16" cy="16" fill="url(#critics-recommend-gradient)" class="critics-recommend-circle"></circle>
-                                                </svg>
-                                                <div class="inner-orb"><p>{critics_recommend}</p></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="external-links external-store-link">
+                        <div class="external-link icon-{store_class1}" ttt="Store">
+                            <a class="external-link-button" href="{store_link1}" target="_blank"></a>
+                        </div>
+                        <div class="external-link icon-{store_class2}" ttt="Store">
+                            <a class="external-link-button" href="{store_link2}" target="_blank"></a>
+                        </div>
+                        <div class="external-link icon-{store_class3}" ttt="Store">
+                            <a class="external-link-button" href="{store_link3}" target="_blank"></a>
+                        </div>
+                        <div class="external-link icon-{store_class4}" ttt="Store">
+                            <a class="external-link-button" href="{store_link4}" target="_blank"></a>
+                        </div>
+                        <div class="external-link icon-{store_class5}" ttt="Store">
+                            <a class="external-link-button" href="{store_link5}" target="_blank"></a>
+                        </div>
+                        <div class="external-link icon-{store_class6}" ttt="Store">
+                            <a class="external-link-button" href="{store_link6}" target="_blank"></a>
+                        </div>
+                        <div class="external-link icon-{store_class7}" ttt="Store">
+                            <a class="external-link-button" href="{store_link7}" target="_blank"></a>
+                        </div>
+                        <div class="external-link icon-{store_class8}" ttt="Store">
+                            <a class="external-link-button" href="{store_link8}" target="_blank"></a>
+                        </div>
+                        <div class="external-link icon-{store_class9}" ttt="Store">
+                            <a class="external-link-button" href="{store_link9}" target="_blank"></a>
+                        </div>
+                        <div class="external-link icon-{store_class10}" ttt="Store">
+                            <a class="external-link-button" href="{store_link10}" target="_blank"></a>
                         </div>
                     </div>
                     <div class="more-info-release {system_requirements_tab1}">
                         <p class="section-info-item-title">System Requirements</p>
                         <div class="more-info-tabs">
-                            <div class="more-info-tab {system_requirements_tab1}" onclick="changeTab(event, 0)">Windows</div>
-                            <div class="more-info-tab {system_requirements_tab2}" onclick="changeTab(event, 1)">Mac</div>
-                            <div class="more-info-tab {system_requirements_tab3}" onclick="changeTab(event, 2)">Linux</div>
+                            <div class="more-info-tab {system_requirements_tab1}" onclick="changeTab(event, 0)"></div>
+                            <div class="more-info-tab {system_requirements_tab2}" onclick="changeTab(event, 1)"></div>
+                            <div class="more-info-tab {system_requirements_tab3}" onclick="changeTab(event, 2)"></div>
+                            <div class="more-info-tab {system_requirements_tab4}" onclick="changeTab(event, 3)"></div>
+                            <div class="more-info-tab {system_requirements_tab5}" onclick="changeTab(event, 4)"></div>
                         </div>
                         <div class="more-info-tab-content" id="tab-content-0">
                             <div class="system-requirements">
@@ -456,6 +430,94 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="more-info-tab-content" id="tab-content-3">
+                            <div class="system-requirements">
+                                <div class="system-requirements-title">Minimum</div>
+                                <div>
+                                    <p>OS</p><p>{minimum_os4}</p>
+                                </div>
+                                <div>
+                                    <p>Processor</p>{minimum_processor4}<p></p>
+                                </div>
+                                <div>
+                                    <p>Memory</p><p>{minimum_memory4}</p>
+                                </div>
+                                <div>
+                                    <p>Graphics</p><p>{minimum_graphics4}</p>
+                                </div>
+                                <div>
+                                    <p>Storage</p><p>{minimum_storage4}</p>
+                                </div>
+                                <div>
+                                    <p>Other</p><p>{minimum_other4}</p>
+                                </div>
+                            </div>
+                            <div class="system-requirements">
+                                <div class="system-requirements-title">Recommended</div>
+                                <div>
+                                    <p>OS</p><p>{recommended_os4}</p>
+                                </div>
+                                <div>
+                                    <p>Processor</p>{recommended_processor4}<p></p>
+                                </div>
+                                <div>
+                                    <p>Memory</p><p>{recommended_memory4}</p>
+                                </div>
+                                <div>
+                                    <p>Graphics</p><p>{recommended_graphics4}</p>
+                                </div>
+                                <div>
+                                    <p>Storage</p><p>{recommended_storage4}</p>
+                                </div>
+                                <div>
+                                    <p>Other</p><p>{recommended_other4}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-info-tab-content" id="tab-content-4">
+                            <div class="system-requirements">
+                                <div class="system-requirements-title">Minimum</div>
+                                <div>
+                                    <p>OS</p><p>{minimum_os5}</p>
+                                </div>
+                                <div>
+                                    <p>Processor</p>{minimum_processor5}<p></p>
+                                </div>
+                                <div>
+                                    <p>Memory</p><p>{minimum_memory5}</p>
+                                </div>
+                                <div>
+                                    <p>Graphics</p><p>{minimum_graphics5}</p>
+                                </div>
+                                <div>
+                                    <p>Storage</p><p>{minimum_storage5}</p>
+                                </div>
+                                <div>
+                                    <p>Other</p><p>{minimum_other5}</p>
+                                </div>
+                            </div>
+                            <div class="system-requirements">
+                                <div class="system-requirements-title">Recommended</div>
+                                <div>
+                                    <p>OS</p><p>{recommended_os5}</p>
+                                </div>
+                                <div>
+                                    <p>Processor</p>{recommended_processor5}<p></p>
+                                </div>
+                                <div>
+                                    <p>Memory</p><p>{recommended_memory5}</p>
+                                </div>
+                                <div>
+                                    <p>Graphics</p><p>{recommended_graphics5}</p>
+                                </div>
+                                <div>
+                                    <p>Storage</p><p>{recommended_storage5}</p>
+                                </div>
+                                <div>
+                                    <p>Other</p><p>{recommended_other5}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="more-info-language {language}">
                         <p class="section-info-item-title">Languages Supported</p>
@@ -502,36 +564,10 @@
                             <p class="language-zh-tw"></p><div><p class="zh_tw_audio"></p><p class="zh_tw_text"></p></div>
                         </div>
                     </div>
-                    <div class="external-links external-store-link">
-                        <div class="external-link icon-{store_class1}" ttt="Store">
-                            <a class="external-link-button" href="{store_link1}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class2}" ttt="Store">
-                            <a class="external-link-button" href="{store_link2}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class3}" ttt="Store">
-                            <a class="external-link-button" href="{store_link3}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class4}" ttt="Store">
-                            <a class="external-link-button" href="{store_link4}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class5}" ttt="Store">
-                            <a class="external-link-button" href="{store_link5}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class6}" ttt="Store">
-                            <a class="external-link-button" href="{store_link6}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class7}" ttt="Store">
-                            <a class="external-link-button" href="{store_link7}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class8}" ttt="Store">
-                            <a class="external-link-button" href="{store_link8}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class9}" ttt="Store">
-                            <a class="external-link-button" href="{store_link9}" target="_blank"></a>
-                        </div>
-                        <div class="external-link icon-{store_class10}" ttt="Store">
-                            <a class="external-link-button" href="{store_link10}" target="_blank"></a>
+                    <div class="review {review}">
+                        <div class="more-info-reviews">
+                            <p class="section-info-item-title">Reviews</p>
+                            <div class="more-info-item-text reviews rating {rating}"></div>
                         </div>
                     </div>
                     <div class="franchise-template">
