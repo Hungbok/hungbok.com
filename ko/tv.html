@@ -74,8 +74,8 @@
                     <div class="contents-top-thumbnail">
                         <div class="item">
                             <div class="item-thumbnail">
-                                <a class="thumbnail" href='//media.hungbok.net/image/anime/{url}/hb_error_horizontal.jpg' data-lightbox="thumbnail" tabindex="-1">
-                                    <img class='thumbnail-background' src="//media.hungbok.net/image/anime/{url}/hb_error_horizontal.jpg" onerror='this.src=`//media.hungbok.net/image/hb/hb_error_horizontal.svg`;' loading='lazy'>
+                                <a class="thumbnail" href='//media.hungbok.net/image/tv/{url}/hb_capsule.jpg' data-lightbox="thumbnail" tabindex="-1">
+                                    <img class='thumbnail-background' {capsule} onerror="showError(this);" loading="lazy">
                                 </a>
                             </div>
                         </div>
@@ -109,9 +109,9 @@
                 </div>
                 <div class="middle-content">
                     <div class="info">
-                        <a class="key-art" href='//media.hungbok.net/image/anime/{url}/hb_thumbnail.jpg' data-lightbox="key-art" tabindex="-1">
-                            <img src="//media.hungbok.net/image/anime/{url}/hb_thumbnail.jpg" onerror='this.src=`//media.hungbok.net/image/hb/hb_error_vertical.svg`;' loading='lazy'>
-                        </a>
+                        <div class="key-art">
+                            <img {thumbnail} onerror="showError(this);" loading="lazy">
+                        </div>
                         <div class="info-table">
                             <div class="info-tr">
                                 <div class="info-left">
