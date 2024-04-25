@@ -250,7 +250,7 @@
                                         <p></p>
                                     </div>
                                     <div class="popup-content">
-                                        <div class="popup-subtitle" ttt="{}">{original_title}</div>
+                                        <div class="popup-subtitle">{original_title}</div>
                                         <div class="popup-title">{title}</div>
                                         <div class="more-info">
                                             <div class="more-info-release">
@@ -262,10 +262,10 @@
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">분류</p>
-                                                <p class="more-info-item-text">{content_type}</p>
+                                                <p class="more-info-item-text {content_type}"></p>
                                             </div>
                                             <div class="more-info-item">
-                                                <p class="more-info-item-title">프렌차이즈</p>
+                                                <p class="more-info-item-title">시리즈</p>
                                                 <p class="more-info-item-text">{franchise}</p>
                                             </div>
                                             <div class="more-info-item">
@@ -330,11 +330,11 @@
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">제작 국가</p>
-                                                <div class="more-info-item-text platform {country}"></div>
+                                                <div class="more-info-item-text platform">{country}</div>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">언어</p>
-                                                <div class="more-info-item-text platform {language}"></div>
+                                                <div class="more-info-item-text platform">{language}</div>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">시청 등급</p>
