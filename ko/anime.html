@@ -193,6 +193,14 @@
                             </div>
                             <div class="info-tr">
                                 <div class="info-left">
+                                    <p>방송국</p>
+                                </div>
+                                <div class="info-right">
+                                    <p><img {broadcast} alt={info_broadcast} onerror='logoError(this);' loading='lazy'></p>
+                                </div>
+                            </div>
+                            <div class="info-tr">
+                                <div class="info-left">
                                     <p>방영 기간</p>
                                 </div>
                                 <div class="info-right">
@@ -289,7 +297,7 @@
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">방송국</p>
-                                                <p class="more-info-item-text">{broadcast} {airing_time}</p>
+                                                <p class="more-info-item-text">{info_broadcast} {airing_time}</p>
                                             </div>
                                             <div class="more-info-item">
                                                 <p class="more-info-item-title">방영 기간</p>
